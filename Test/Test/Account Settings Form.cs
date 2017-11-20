@@ -19,7 +19,7 @@ namespace Test
         {
             InitializeComponent();
         }
-
+        string Hallo;
 
         private void Account_Settings_Form_Load(object sender, EventArgs e)
         {
