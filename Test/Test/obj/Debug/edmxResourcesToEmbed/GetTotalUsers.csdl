@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GetTotalUsersModell" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="TestEntities" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="GetTotalUsers" ReturnType="Collection(GetTotalUsersModell.GetTotalUsers_Result)" />
+  </EntityContainer>
+  <ComplexType Name="GetTotalUsers_Result">
+    <Property Type="Int32" Name="UserID" Nullable="false" />
+    <Property Type="String" Name="Username" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="UserPassword" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="UserSecurityQuestion" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="UserSecurityQuestionAnswer" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="UserEmailAddress" Nullable="true" MaxLength="500" />
+  </ComplexType>
+</Schema>

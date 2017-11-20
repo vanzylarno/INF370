@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="NorthwindModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="NorthwindEntities" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="GetTotalOrders" ReturnType="Collection(NorthwindModel.GetTotalOrders_Result)" />
+  </EntityContainer>
+  <ComplexType Name="GetTotalOrders_Result">
+    <Property Type="Int32" Name="Year" Nullable="true" />
+    <Property Type="Int32" Name="Total" Nullable="true" />
+  </ComplexType>
+</Schema>

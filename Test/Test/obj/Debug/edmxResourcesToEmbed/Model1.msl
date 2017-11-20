@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="NorthwindModelStoreContainer" CdmEntityContainer="NorthwindEntities">
+    <FunctionImportMapping FunctionImportName="GetTotalOrders" FunctionName="NorthwindModel.Store.GetTotalOrders">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="NorthwindModel.GetTotalOrders_Result">
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>
