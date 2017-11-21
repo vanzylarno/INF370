@@ -148,6 +148,12 @@
     <Compile Include="Account Settings Form.Designer.cs">
       <DependentUpon>Account Settings Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="Add Supplier Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Supplier Form.Designer.cs">
+      <DependentUpon>Add Supplier Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin Features.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -178,6 +184,12 @@
     <Compile Include="Database Backup Form.Designer.cs">
       <DependentUpon>Database Backup Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="Delete a Supplier Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete a Supplier Form.Designer.cs">
+      <DependentUpon>Delete a Supplier Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Find a Forgotten Password Form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -189,6 +201,12 @@
     </Compile>
     <Compile Include="Find a Forgotten Username Form.Designer.cs">
       <DependentUpon>Find a Forgotten Username Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Find A Supplier Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Find A Supplier Form.Designer.cs">
+      <DependentUpon>Find A Supplier Form.cs</DependentUpon>
     </Compile>
     <Compile Include="Help Form.cs">
       <SubType>Form</SubType>
@@ -241,6 +259,12 @@
     <Compile Include="Restore Database Form.Designer.cs">
       <DependentUpon>Restore Database Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="Send Supplier Order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Send Supplier Order.Designer.cs">
+      <DependentUpon>Send Supplier Order.cs</DependentUpon>
+    </Compile>
     <Compile Include="Suppliers Form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -252,6 +276,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>TestDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Update a Supplier Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update a Supplier Form.Designer.cs">
+      <DependentUpon>Update a Supplier Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Update Account Information Form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -260,6 +290,9 @@
     </Compile>
     <EmbeddedResource Include="Account Settings Form.resx">
       <DependentUpon>Account Settings Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add Supplier Form.resx">
+      <DependentUpon>Add Supplier Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin Features.resx">
       <DependentUpon>Admin Features.cs</DependentUpon>
@@ -276,11 +309,17 @@
     <EmbeddedResource Include="Database Backup Form.resx">
       <DependentUpon>Database Backup Form.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Delete a Supplier Form.resx">
+      <DependentUpon>Delete a Supplier Form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Find a Forgotten Password Form.resx">
       <DependentUpon>Find a Forgotten Password Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Find a Forgotten Username Form.resx">
       <DependentUpon>Find a Forgotten Username Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Find A Supplier Form.resx">
+      <DependentUpon>Find A Supplier Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Help Form.resx">
       <DependentUpon>Help Form.cs</DependentUpon>
@@ -299,8 +338,14 @@
     <EmbeddedResource Include="Restore Database Form.resx">
       <DependentUpon>Restore Database Form.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Send Supplier Order.resx">
+      <DependentUpon>Send Supplier Order.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Suppliers Form.resx">
       <DependentUpon>Suppliers Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update a Supplier Form.resx">
+      <DependentUpon>Update a Supplier Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Update Account Information Form.resx">
       <DependentUpon>Update Account Information Form.cs</DependentUpon>
@@ -338,6 +383,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Receive Order.png" />
+    <None Include="Resources\Email.png" />
     <None Include="Resources\Search.png" />
     <None Include="Resources\Update.png" />
     <None Include="Resources\Delete.png" />

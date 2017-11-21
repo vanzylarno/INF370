@@ -83,6 +83,16 @@ namespace Test.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Email {
+            get {
+                object obj = ResourceManager.GetObject("Email", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap if_camera_configuration_340382 {
             get {
                 object obj = ResourceManager.GetObject("if_camera_configuration_340382", resourceCulture);
@@ -266,6 +276,16 @@ namespace Test.Properties {
         internal static System.Drawing.Bitmap Password1 {
             get {
                 object obj = ResourceManager.GetObject("Password1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Receive_Order {
+            get {
+                object obj = ResourceManager.GetObject("Receive Order", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

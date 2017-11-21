@@ -34,5 +34,39 @@ namespace Test
 
         }
 
+        private void AddSupplier_Click(object sender, EventArgs e)
+        {
+
+
+            Add_Supplier_Form myform = new Add_Supplier_Form();
+            myform.ShowDialog();
+        }
+
+        private void DeleteSupplier_Click(object sender, EventArgs e)
+        {
+
+
+            Delete_a_Supplier_Form myfrom = new Delete_a_Supplier_Form();
+            myfrom.ShowDialog();
+        }
+
+        private void UpdateSupplier_Click(object sender, EventArgs e)
+        {
+
+            Update_a_Supplier_Form myform = new Update_a_Supplier_Form();
+            myform.ShowDialog();
+        }
+
+        private void FindSupplier_Click(object sender, EventArgs e)
+        {
+            Find_A_Supplier_Form myfrom = new Find_A_Supplier_Form();
+            myfrom.ShowDialog();
+        }
+
+        private void SendOrder_Click(object sender, EventArgs e)
+        {
+            Send_Supplier_Order myfrom = new Send_Supplier_Order();
+            myfrom.ShowDialog();
+        }
     }
 }
