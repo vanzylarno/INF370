@@ -338,6 +338,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Search.png" />
+    <None Include="Resources\Update.png" />
+    <None Include="Resources\Delete.png" />
+    <None Include="Resources\Add.png" />
     <None Include="bin\Images\if_SEO_key_969261.png" />
     <None Include="bin\Images\if_Lock_1214985.png" />
     <None Include="bin\Images\if_User_Interface-40_2044248.png" />
