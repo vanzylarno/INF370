@@ -148,6 +148,12 @@
     <Compile Include="Account Settings Form.Designer.cs">
       <DependentUpon>Account Settings Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="Add new Supplier Order Product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add new Supplier Order Product.Designer.cs">
+      <DependentUpon>Add new Supplier Order Product.cs</DependentUpon>
+    </Compile>
     <Compile Include="Add Supplier Form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -259,6 +265,12 @@
     <Compile Include="Restore Database Form.Designer.cs">
       <DependentUpon>Restore Database Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="Send a Supplier Order Help Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Send a Supplier Order Help Page.Designer.cs">
+      <DependentUpon>Send a Supplier Order Help Page.cs</DependentUpon>
+    </Compile>
     <Compile Include="Send Supplier Order.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -290,6 +302,9 @@
     </Compile>
     <EmbeddedResource Include="Account Settings Form.resx">
       <DependentUpon>Account Settings Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add new Supplier Order Product.resx">
+      <DependentUpon>Add new Supplier Order Product.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Add Supplier Form.resx">
       <DependentUpon>Add Supplier Form.cs</DependentUpon>
@@ -338,6 +353,9 @@
     <EmbeddedResource Include="Restore Database Form.resx">
       <DependentUpon>Restore Database Form.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Send a Supplier Order Help Page.resx">
+      <DependentUpon>Send a Supplier Order Help Page.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Send Supplier Order.resx">
       <DependentUpon>Send Supplier Order.cs</DependentUpon>
     </EmbeddedResource>
@@ -383,6 +401,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Basket.png" />
+    <None Include="Resources\Add Product.png" />
     <None Include="Resources\Receive Order.png" />
     <None Include="Resources\Email.png" />
     <None Include="Resources\Search.png" />

@@ -196,3 +196,6 @@ F:\GitHub\INF370\Test\Test\obj\Debug\Test.exe
 F:\GitHub\INF370\Test\Test\obj\Debug\Test.pdb
 F:\GitHub\INF370\Test\Test\obj\Debug\Test.Update_a_Supplier_Form.resources
 F:\GitHub\INF370\Test\Test\obj\Debug\Test.Find_A_Supplier_Form.resources
+F:\GitHub\INF370\Test\Test\obj\Debug\Test.Send_Supplier_Order.resources
+F:\GitHub\INF370\Test\Test\obj\Debug\Test.Add_new_Supplier_Order_Product.resources
+F:\GitHub\INF370\Test\Test\obj\Debug\Test.Send_a_Supplier_Order_Help_Page.resources
