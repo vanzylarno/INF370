@@ -259,6 +259,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Receive Supplier Order Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receive Supplier Order Form.Designer.cs">
+      <DependentUpon>Receive Supplier Order Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Restore Database Form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -349,6 +355,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receive Supplier Order Form.resx">
+      <DependentUpon>Receive Supplier Order Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Restore Database Form.resx">
       <DependentUpon>Restore Database Form.cs</DependentUpon>

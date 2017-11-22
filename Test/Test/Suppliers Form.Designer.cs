@@ -51,6 +51,7 @@
             this.ReceiveOrder.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
             this.ReceiveOrder.UseSelectable = true;
             this.ReceiveOrder.UseTileImage = true;
+            this.ReceiveOrder.Click += new System.EventHandler(this.ReceiveOrder_Click);
             // 
             // SendOrder
             // 

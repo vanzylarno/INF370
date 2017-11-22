@@ -68,5 +68,12 @@ namespace Test
             Send_Supplier_Order myfrom = new Send_Supplier_Order();
             myfrom.ShowDialog();
         }
+
+        private void ReceiveOrder_Click(object sender, EventArgs e)
+        {
+            Receive_Supplier_Order_Form myform = new Receive_Supplier_Order_Form();
+            myform.ShowDialog();
+
+        }
     }
 }
