@@ -160,6 +160,12 @@
     <Compile Include="Add new Supplier Order Product.Designer.cs">
       <DependentUpon>Add new Supplier Order Product.cs</DependentUpon>
     </Compile>
+    <Compile Include="Add new User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add new User.Designer.cs">
+      <DependentUpon>Add new User.cs</DependentUpon>
+    </Compile>
     <Compile Include="Add Supplier Form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -214,6 +220,12 @@
     <Compile Include="Delete a Supplier Form.Designer.cs">
       <DependentUpon>Delete a Supplier Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="Delete a User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete a User.Designer.cs">
+      <DependentUpon>Delete a User.cs</DependentUpon>
+    </Compile>
     <Compile Include="Find a Forgotten Password Form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -231,6 +243,12 @@
     </Compile>
     <Compile Include="Find A Supplier Form.Designer.cs">
       <DependentUpon>Find A Supplier Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Find a User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Find a User.Designer.cs">
+      <DependentUpon>Find a User.cs</DependentUpon>
     </Compile>
     <Compile Include="Find Inventory Product.cs">
       <SubType>Form</SubType>
@@ -330,6 +348,12 @@
     <Compile Include="Update a Supplier Form.Designer.cs">
       <DependentUpon>Update a Supplier Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="Update a User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update a User.Designer.cs">
+      <DependentUpon>Update a User.cs</DependentUpon>
+    </Compile>
     <Compile Include="Update Account Information Form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -350,6 +374,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Add new Supplier Order Product.resx">
       <DependentUpon>Add new Supplier Order Product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add new User.resx">
+      <DependentUpon>Add new User.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Add Supplier Form.resx">
       <DependentUpon>Add Supplier Form.cs</DependentUpon>
@@ -378,6 +405,9 @@
     <EmbeddedResource Include="Delete a Supplier Form.resx">
       <DependentUpon>Delete a Supplier Form.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Delete a User.resx">
+      <DependentUpon>Delete a User.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Find a Forgotten Password Form.resx">
       <DependentUpon>Find a Forgotten Password Form.cs</DependentUpon>
     </EmbeddedResource>
@@ -386,6 +416,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Find A Supplier Form.resx">
       <DependentUpon>Find A Supplier Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Find a User.resx">
+      <DependentUpon>Find a User.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Find Inventory Product.resx">
       <DependentUpon>Find Inventory Product.cs</DependentUpon>
@@ -424,6 +457,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Update a Supplier Form.resx">
       <DependentUpon>Update a Supplier Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update a User.resx">
+      <DependentUpon>Update a User.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Update Account Information Form.resx">
       <DependentUpon>Update Account Information Form.cs</DependentUpon>
@@ -491,6 +527,8 @@
     <None Include="bin\Images\Suppliers.png" />
     <None Include="bin\Images\Settings.png" />
     <None Include="bin\Images\Calculator.png" />
+    <None Include="bin\Images\Backup.png" />
+    <None Include="bin\Images\Restore.png" />
     <Content Include="Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Model1.Context.cs</LastGenOutput>

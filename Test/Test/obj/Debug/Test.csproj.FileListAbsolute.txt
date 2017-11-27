@@ -206,3 +206,7 @@ F:\GitHub\INF370\Test\Test\obj\Debug\Test.Find_Inventory_Product.resources
 F:\GitHub\INF370\Test\Test\obj\Debug\Test.Delete_a_Inventory_product.resources
 F:\GitHub\INF370\Test\Test\obj\Debug\Test.Update_Inventory_Product.resources
 F:\GitHub\INF370\Test\Test\obj\Debug\Test.Calculator.resources
+F:\GitHub\INF370\Test\Test\obj\Debug\Test.Add_new_User.resources
+F:\GitHub\INF370\Test\Test\obj\Debug\Test.Find_a_User.resources
+F:\GitHub\INF370\Test\Test\obj\Debug\Test.Delete_a_User.resources
+F:\GitHub\INF370\Test\Test\obj\Debug\Test.Update_a_User.resources

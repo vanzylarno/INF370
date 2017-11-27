@@ -111,6 +111,7 @@
             this.Controls.Add(this.metroTile1);
             this.Controls.Add(this.mtDelete);
             this.Controls.Add(this.mtAdd);
+            this.MaximizeBox = false;
             this.Name = "Inventory_Form";
             this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Orange;
