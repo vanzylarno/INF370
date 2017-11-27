@@ -48,7 +48,7 @@
             this.btnRestore.Style = MetroFramework.MetroColorStyle.Blue;
             this.btnRestore.TabIndex = 9;
             this.btnRestore.Text = "Restore Database";
-            this.btnRestore.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.btnRestore.Theme = MetroFramework.MetroThemeStyle.Light;
             this.btnRestore.UseSelectable = true;
             this.btnRestore.Click += new System.EventHandler(this.btnRestore_Click_1);
             // 
@@ -60,7 +60,7 @@
             this.metroButton1.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroButton1.TabIndex = 10;
             this.metroButton1.Text = "Browse For Database File";
-            this.metroButton1.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroButton1.Theme = MetroFramework.MetroThemeStyle.Light;
             this.metroButton1.UseSelectable = true;
             this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
             // 
@@ -92,7 +92,7 @@
             this.txtFilename.Size = new System.Drawing.Size(276, 23);
             this.txtFilename.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtFilename.TabIndex = 11;
-            this.txtFilename.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.txtFilename.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtFilename.UseSelectable = true;
             this.txtFilename.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtFilename.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
@@ -106,7 +106,7 @@
             this.cbxDatabaseName.Size = new System.Drawing.Size(275, 29);
             this.cbxDatabaseName.Style = MetroFramework.MetroColorStyle.Blue;
             this.cbxDatabaseName.TabIndex = 13;
-            this.cbxDatabaseName.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.cbxDatabaseName.Theme = MetroFramework.MetroThemeStyle.Light;
             this.cbxDatabaseName.UseSelectable = true;
             // 
             // metroLabel2
@@ -119,7 +119,7 @@
             this.metroLabel2.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroLabel2.TabIndex = 12;
             this.metroLabel2.Text = "Select Database Name:";
-            this.metroLabel2.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroLabel2.Theme = MetroFramework.MetroThemeStyle.Light;
             // 
             // Restore_Database_Form
             // 
@@ -135,8 +135,8 @@
             this.MinimumSize = new System.Drawing.Size(316, 283);
             this.Name = "Restore_Database_Form";
             this.Resizable = false;
+            this.Style = MetroFramework.MetroColorStyle.Orange;
             this.Text = "Restore Database";
-            this.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.Load += new System.EventHandler(this.Restore_Database_Form_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -66,7 +66,7 @@
             this.metroPanel1.Name = "metroPanel1";
             this.metroPanel1.Size = new System.Drawing.Size(355, 251);
             this.metroPanel1.TabIndex = 3;
-            this.metroPanel1.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroPanel1.Theme = MetroFramework.MetroThemeStyle.Light;
             this.metroPanel1.VerticalScrollbarBarColor = true;
             this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel1.VerticalScrollbarSize = 10;
@@ -97,7 +97,7 @@
             this.txtEmailAddress.ShortcutsEnabled = true;
             this.txtEmailAddress.Size = new System.Drawing.Size(328, 23);
             this.txtEmailAddress.TabIndex = 10;
-            this.txtEmailAddress.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.txtEmailAddress.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtEmailAddress.UseSelectable = true;
             this.txtEmailAddress.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtEmailAddress.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
@@ -128,7 +128,7 @@
             this.txtSecurityQuestionAnswer.ShortcutsEnabled = true;
             this.txtSecurityQuestionAnswer.Size = new System.Drawing.Size(328, 23);
             this.txtSecurityQuestionAnswer.TabIndex = 9;
-            this.txtSecurityQuestionAnswer.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.txtSecurityQuestionAnswer.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtSecurityQuestionAnswer.UseSelectable = true;
             this.txtSecurityQuestionAnswer.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtSecurityQuestionAnswer.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
@@ -159,7 +159,7 @@
             this.txtSecurityQuestion.ShortcutsEnabled = true;
             this.txtSecurityQuestion.Size = new System.Drawing.Size(328, 23);
             this.txtSecurityQuestion.TabIndex = 8;
-            this.txtSecurityQuestion.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.txtSecurityQuestion.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtSecurityQuestion.UseSelectable = true;
             this.txtSecurityQuestion.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtSecurityQuestion.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
@@ -190,7 +190,7 @@
             this.txtPassword.ShortcutsEnabled = true;
             this.txtPassword.Size = new System.Drawing.Size(328, 23);
             this.txtPassword.TabIndex = 7;
-            this.txtPassword.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.txtPassword.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtPassword.UseSelectable = true;
             this.txtPassword.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtPassword.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
@@ -221,7 +221,7 @@
             this.txtUsername.ShortcutsEnabled = true;
             this.txtUsername.Size = new System.Drawing.Size(328, 23);
             this.txtUsername.TabIndex = 6;
-            this.txtUsername.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.txtUsername.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtUsername.UseSelectable = true;
             this.txtUsername.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtUsername.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
@@ -234,7 +234,7 @@
             this.metroLabel6.Size = new System.Drawing.Size(99, 19);
             this.metroLabel6.TabIndex = 5;
             this.metroLabel6.Text = "Email Address :";
-            this.metroLabel6.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroLabel6.Theme = MetroFramework.MetroThemeStyle.Light;
             // 
             // metroLabel5
             // 
@@ -244,7 +244,7 @@
             this.metroLabel5.Size = new System.Drawing.Size(160, 19);
             this.metroLabel5.TabIndex = 4;
             this.metroLabel5.Text = "Security Question Answer:";
-            this.metroLabel5.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroLabel5.Theme = MetroFramework.MetroThemeStyle.Light;
             // 
             // metroLabel4
             // 
@@ -254,7 +254,7 @@
             this.metroLabel4.Size = new System.Drawing.Size(117, 19);
             this.metroLabel4.TabIndex = 3;
             this.metroLabel4.Text = "Security Question :";
-            this.metroLabel4.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroLabel4.Theme = MetroFramework.MetroThemeStyle.Light;
             // 
             // metroLabel3
             // 
@@ -264,7 +264,7 @@
             this.metroLabel3.Size = new System.Drawing.Size(70, 19);
             this.metroLabel3.TabIndex = 3;
             this.metroLabel3.Text = "Password :";
-            this.metroLabel3.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroLabel3.Theme = MetroFramework.MetroThemeStyle.Light;
             // 
             // metroLabel1
             // 
@@ -274,7 +274,7 @@
             this.metroLabel1.Size = new System.Drawing.Size(75, 19);
             this.metroLabel1.TabIndex = 0;
             this.metroLabel1.Text = "Username :";
-            this.metroLabel1.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroLabel1.Theme = MetroFramework.MetroThemeStyle.Light;
             // 
             // btnProfileImage
             // 
@@ -283,7 +283,7 @@
             this.btnProfileImage.Size = new System.Drawing.Size(328, 39);
             this.btnProfileImage.TabIndex = 11;
             this.btnProfileImage.Text = "Choose Profile Image";
-            this.btnProfileImage.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.btnProfileImage.Theme = MetroFramework.MetroThemeStyle.Light;
             this.btnProfileImage.UseSelectable = true;
             this.btnProfileImage.Click += new System.EventHandler(this.btnProfileImage_Click);
             // 
@@ -298,12 +298,12 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(9, 332);
+            this.btnUpdate.Location = new System.Drawing.Point(9, 334);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(689, 69);
             this.btnUpdate.TabIndex = 13;
             this.btnUpdate.Text = "Update Profile";
-            this.btnUpdate.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.btnUpdate.Theme = MetroFramework.MetroThemeStyle.Light;
             this.btnUpdate.UseSelectable = true;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
@@ -320,8 +320,8 @@
             this.MinimizeBox = false;
             this.Name = "Update_Account_Information_Form";
             this.Resizable = false;
+            this.Style = MetroFramework.MetroColorStyle.Orange;
             this.Text = "Update Account Information";
-            this.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.Load += new System.EventHandler(this.Update_Account_Information_Form_Load);
             this.metroPanel1.ResumeLayout(false);
             this.metroPanel1.PerformLayout();

@@ -65,7 +65,7 @@
             this.txtUsername.ShortcutsEnabled = true;
             this.txtUsername.Size = new System.Drawing.Size(456, 23);
             this.txtUsername.TabIndex = 0;
-            this.txtUsername.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.txtUsername.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtUsername.UseSelectable = true;
             this.txtUsername.WaterMark = "Please Enter Your Username";
             this.txtUsername.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -78,10 +78,10 @@
             this.metroLabel1.FontWeight = MetroFramework.MetroLabelWeight.Bold;
             this.metroLabel1.Location = new System.Drawing.Point(5, 70);
             this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(520, 25);
+            this.metroLabel1.Size = new System.Drawing.Size(459, 19);
             this.metroLabel1.TabIndex = 1;
             this.metroLabel1.Text = "Please Enter the New Account information into the fields provided :";
-            this.metroLabel1.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroLabel1.Theme = MetroFramework.MetroThemeStyle.Light;
             // 
             // txtPassword
             // 
@@ -110,7 +110,7 @@
             this.txtPassword.ShortcutsEnabled = true;
             this.txtPassword.Size = new System.Drawing.Size(456, 23);
             this.txtPassword.TabIndex = 2;
-            this.txtPassword.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.txtPassword.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtPassword.UseSelectable = true;
             this.txtPassword.WaterMark = "Please Enter Your Password";
             this.txtPassword.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -143,7 +143,7 @@
             this.txtPasswordRetype.ShortcutsEnabled = true;
             this.txtPasswordRetype.Size = new System.Drawing.Size(456, 23);
             this.txtPasswordRetype.TabIndex = 3;
-            this.txtPasswordRetype.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.txtPasswordRetype.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtPasswordRetype.UseSelectable = true;
             this.txtPasswordRetype.WaterMark = "Please Re-Enter Your Password";
             this.txtPasswordRetype.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -176,7 +176,7 @@
             this.txtSecurityQuestion.ShortcutsEnabled = true;
             this.txtSecurityQuestion.Size = new System.Drawing.Size(456, 23);
             this.txtSecurityQuestion.TabIndex = 4;
-            this.txtSecurityQuestion.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.txtSecurityQuestion.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtSecurityQuestion.UseSelectable = true;
             this.txtSecurityQuestion.WaterMark = "Please Enter A Security Question";
             this.txtSecurityQuestion.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -209,7 +209,7 @@
             this.txtSecurityQuestionAnswer.ShortcutsEnabled = true;
             this.txtSecurityQuestionAnswer.Size = new System.Drawing.Size(456, 23);
             this.txtSecurityQuestionAnswer.TabIndex = 5;
-            this.txtSecurityQuestionAnswer.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.txtSecurityQuestionAnswer.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtSecurityQuestionAnswer.UseSelectable = true;
             this.txtSecurityQuestionAnswer.WaterMark = "Please Enter Your Security Question Answer";
             this.txtSecurityQuestionAnswer.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -242,7 +242,7 @@
             this.txtEmailAddress.ShortcutsEnabled = true;
             this.txtEmailAddress.Size = new System.Drawing.Size(456, 23);
             this.txtEmailAddress.TabIndex = 6;
-            this.txtEmailAddress.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.txtEmailAddress.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtEmailAddress.UseSelectable = true;
             this.txtEmailAddress.WaterMark = "Please Enter Your E-Mail Address";
             this.txtEmailAddress.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -256,7 +256,7 @@
             this.metroButton1.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroButton1.TabIndex = 7;
             this.metroButton1.Text = "Create New Account";
-            this.metroButton1.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroButton1.Theme = MetroFramework.MetroThemeStyle.Light;
             this.metroButton1.UseSelectable = true;
             this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
             // 
@@ -278,8 +278,8 @@
             this.MinimumSize = new System.Drawing.Size(474, 374);
             this.Name = "Create_New_Account_Form";
             this.Resizable = false;
+            this.Style = MetroFramework.MetroColorStyle.Orange;
             this.Text = "Create New Account";
-            this.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.Load += new System.EventHandler(this.Create_New_Account_Form_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

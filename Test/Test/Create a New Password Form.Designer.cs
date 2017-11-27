@@ -46,7 +46,7 @@
             this.metroLabel1.Size = new System.Drawing.Size(417, 19);
             this.metroLabel1.TabIndex = 0;
             this.metroLabel1.Text = "To Create a New Password Please Fill in the Following Fields :";
-            this.metroLabel1.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroLabel1.Theme = MetroFramework.MetroThemeStyle.Light;
             // 
             // txtUsername
             // 
@@ -76,7 +76,7 @@
             this.txtUsername.Size = new System.Drawing.Size(417, 23);
             this.txtUsername.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtUsername.TabIndex = 1;
-            this.txtUsername.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.txtUsername.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtUsername.UseSelectable = true;
             this.txtUsername.WaterMark = "Please Enter Your Username";
             this.txtUsername.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -110,7 +110,7 @@
             this.txtPassword.Size = new System.Drawing.Size(417, 23);
             this.txtPassword.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtPassword.TabIndex = 3;
-            this.txtPassword.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.txtPassword.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtPassword.UseSelectable = true;
             this.txtPassword.UseSystemPasswordChar = true;
             this.txtPassword.WaterMark = "Please Enter Your Old Password";
@@ -125,7 +125,7 @@
             this.btnSendUserInfo.Style = MetroFramework.MetroColorStyle.Blue;
             this.btnSendUserInfo.TabIndex = 4;
             this.btnSendUserInfo.Text = "Send User Info";
-            this.btnSendUserInfo.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.btnSendUserInfo.Theme = MetroFramework.MetroThemeStyle.Light;
             this.btnSendUserInfo.UseSelectable = true;
             this.btnSendUserInfo.Click += new System.EventHandler(this.btnSendUserInfo_Click);
             // 
@@ -157,7 +157,7 @@
             this.txtNewPassword.Size = new System.Drawing.Size(417, 23);
             this.txtNewPassword.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtNewPassword.TabIndex = 5;
-            this.txtNewPassword.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.txtNewPassword.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtNewPassword.UseSelectable = true;
             this.txtNewPassword.UseSystemPasswordChar = true;
             this.txtNewPassword.WaterMark = "Please Enter Your New Password";
@@ -192,7 +192,7 @@
             this.txtNewPasswordRetype.Size = new System.Drawing.Size(417, 23);
             this.txtNewPasswordRetype.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtNewPasswordRetype.TabIndex = 6;
-            this.txtNewPasswordRetype.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.txtNewPasswordRetype.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtNewPasswordRetype.UseSelectable = true;
             this.txtNewPasswordRetype.UseSystemPasswordChar = true;
             this.txtNewPasswordRetype.WaterMark = "Please Re-Type Your New Password";
@@ -207,7 +207,7 @@
             this.btnCreateNewPassword.Style = MetroFramework.MetroColorStyle.Blue;
             this.btnCreateNewPassword.TabIndex = 7;
             this.btnCreateNewPassword.Text = "Create New Password";
-            this.btnCreateNewPassword.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.btnCreateNewPassword.Theme = MetroFramework.MetroThemeStyle.Light;
             this.btnCreateNewPassword.UseSelectable = true;
             this.btnCreateNewPassword.Click += new System.EventHandler(this.btnCreateNewPassword_Click);
             // 
@@ -228,8 +228,8 @@
             this.MinimumSize = new System.Drawing.Size(445, 316);
             this.Name = "Create_a_New_Password_Form";
             this.Resizable = false;
+            this.Style = MetroFramework.MetroColorStyle.Orange;
             this.Text = "Create a New Password";
-            this.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.Load += new System.EventHandler(this.Create_a_New_Password_Form_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

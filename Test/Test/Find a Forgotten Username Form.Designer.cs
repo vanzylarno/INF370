@@ -39,11 +39,11 @@
             this.metroLabel1.FontWeight = MetroFramework.MetroLabelWeight.Bold;
             this.metroLabel1.Location = new System.Drawing.Point(6, 64);
             this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(486, 19);
+            this.metroLabel1.Size = new System.Drawing.Size(490, 19);
             this.metroLabel1.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroLabel1.TabIndex = 0;
-            this.metroLabel1.Text = "To Find Your Password Help us byProviding the Following Information :";
-            this.metroLabel1.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroLabel1.Text = "To Find Your Password Help us by Providing the Following Information :";
+            this.metroLabel1.Theme = MetroFramework.MetroThemeStyle.Light;
             // 
             // txtUserEmail
             // 
@@ -73,7 +73,7 @@
             this.txtUserEmail.Size = new System.Drawing.Size(458, 23);
             this.txtUserEmail.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtUserEmail.TabIndex = 1;
-            this.txtUserEmail.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.txtUserEmail.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtUserEmail.UseSelectable = true;
             this.txtUserEmail.WaterMark = "Please Provide your Email Address";
             this.txtUserEmail.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -87,7 +87,7 @@
             this.metroButton1.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroButton1.TabIndex = 2;
             this.metroButton1.Text = "Find Username";
-            this.metroButton1.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroButton1.Theme = MetroFramework.MetroThemeStyle.Light;
             this.metroButton1.UseSelectable = true;
             this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
             // 
@@ -104,8 +104,8 @@
             this.MinimumSize = new System.Drawing.Size(504, 185);
             this.Name = "Find_a_Forgotten_Username_Form";
             this.Resizable = false;
+            this.Style = MetroFramework.MetroColorStyle.Orange;
             this.Text = "Find a Forgotten Username";
-            this.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.Load += new System.EventHandler(this.Find_a_Forgotten_Username_Form_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

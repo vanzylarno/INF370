@@ -58,5 +58,11 @@ namespace Test
             Account_Settings_Form myform = new Account_Settings_Form();
             myform.ShowDialog();
         }
+
+        private void mtInventory_Click(object sender, EventArgs e)
+        {
+            Inventory_Form myform = new Inventory_Form();
+            myform.ShowDialog();
+        }
     }
 }

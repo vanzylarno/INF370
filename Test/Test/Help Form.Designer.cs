@@ -39,6 +39,7 @@
             this.mtCreateANewPassword.Location = new System.Drawing.Point(13, 255);
             this.mtCreateANewPassword.Name = "mtCreateANewPassword";
             this.mtCreateANewPassword.Size = new System.Drawing.Size(530, 186);
+            this.mtCreateANewPassword.Style = MetroFramework.MetroColorStyle.Orange;
             this.mtCreateANewPassword.TabIndex = 2;
             this.mtCreateANewPassword.Text = "Create a New Password";
             this.mtCreateANewPassword.TileImage = global::Test.Properties.Resources.if_SEO_key_9692611;
@@ -54,6 +55,7 @@
             this.mtFindAForgottenUsername.Location = new System.Drawing.Point(281, 63);
             this.mtFindAForgottenUsername.Name = "mtFindAForgottenUsername";
             this.mtFindAForgottenUsername.Size = new System.Drawing.Size(262, 186);
+            this.mtFindAForgottenUsername.Style = MetroFramework.MetroColorStyle.Orange;
             this.mtFindAForgottenUsername.TabIndex = 1;
             this.mtFindAForgottenUsername.Text = "Find a Forgotten Username";
             this.mtFindAForgottenUsername.TileImage = global::Test.Properties.Resources.Username4;
@@ -70,7 +72,7 @@
             this.mtForgottenPassword.Location = new System.Drawing.Point(13, 63);
             this.mtForgottenPassword.Name = "mtForgottenPassword";
             this.mtForgottenPassword.Size = new System.Drawing.Size(262, 186);
-            this.mtForgottenPassword.Style = MetroFramework.MetroColorStyle.Blue;
+            this.mtForgottenPassword.Style = MetroFramework.MetroColorStyle.Orange;
             this.mtForgottenPassword.TabIndex = 0;
             this.mtForgottenPassword.Text = "Find a Forgotten Password";
             this.mtForgottenPassword.TileImage = global::Test.Properties.Resources.if_cloud_key_lock_532256_1_4;
@@ -94,8 +96,8 @@
             this.MinimumSize = new System.Drawing.Size(558, 460);
             this.Name = "Help_Form";
             this.Resizable = false;
+            this.Style = MetroFramework.MetroColorStyle.Orange;
             this.Text = "Help";
-            this.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.Load += new System.EventHandler(this.Help_Form_Load);
             this.ResumeLayout(false);
 

@@ -148,6 +148,12 @@
     <Compile Include="Account Settings Form.Designer.cs">
       <DependentUpon>Account Settings Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="Add Inventory Product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Inventory Product.Designer.cs">
+      <DependentUpon>Add Inventory Product.cs</DependentUpon>
+    </Compile>
     <Compile Include="Add new Supplier Order Product.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -190,6 +196,12 @@
     <Compile Include="Database Backup Form.Designer.cs">
       <DependentUpon>Database Backup Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="Delete a Inventory product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete a Inventory product.Designer.cs">
+      <DependentUpon>Delete a Inventory product.cs</DependentUpon>
+    </Compile>
     <Compile Include="Delete a Supplier Form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -214,11 +226,23 @@
     <Compile Include="Find A Supplier Form.Designer.cs">
       <DependentUpon>Find A Supplier Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="Find Inventory Product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Find Inventory Product.Designer.cs">
+      <DependentUpon>Find Inventory Product.cs</DependentUpon>
+    </Compile>
     <Compile Include="Help Form.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Help Form.Designer.cs">
       <DependentUpon>Help Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory Form.Designer.cs">
+      <DependentUpon>Inventory Form.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -306,8 +330,17 @@
     <Compile Include="Update Account Information Form.Designer.cs">
       <DependentUpon>Update Account Information Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="Update Inventory Product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update Inventory Product.Designer.cs">
+      <DependentUpon>Update Inventory Product.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Account Settings Form.resx">
       <DependentUpon>Account Settings Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add Inventory Product.resx">
+      <DependentUpon>Add Inventory Product.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Add new Supplier Order Product.resx">
       <DependentUpon>Add new Supplier Order Product.cs</DependentUpon>
@@ -330,6 +363,9 @@
     <EmbeddedResource Include="Database Backup Form.resx">
       <DependentUpon>Database Backup Form.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Delete a Inventory product.resx">
+      <DependentUpon>Delete a Inventory product.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Delete a Supplier Form.resx">
       <DependentUpon>Delete a Supplier Form.cs</DependentUpon>
     </EmbeddedResource>
@@ -342,8 +378,14 @@
     <EmbeddedResource Include="Find A Supplier Form.resx">
       <DependentUpon>Find A Supplier Form.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Find Inventory Product.resx">
+      <DependentUpon>Find Inventory Product.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Help Form.resx">
       <DependentUpon>Help Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory Form.resx">
+      <DependentUpon>Inventory Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -376,6 +418,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Update Account Information Form.resx">
       <DependentUpon>Update Account Information Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update Inventory Product.resx">
+      <DependentUpon>Update Inventory Product.cs</DependentUpon>
     </EmbeddedResource>
     <EntityDeploy Include="Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
@@ -433,6 +478,9 @@
     <None Include="bin\Images\if_icons_exit2_1564506.png" />
     <None Include="bin\Images\if_settings_115801.png" />
     <None Include="bin\Images\if_cloud-arrow-up_532264.png" />
+    <None Include="bin\Images\Inventory.png" />
+    <None Include="bin\Images\Suppliers.png" />
+    <None Include="bin\Images\Settings.png" />
     <Content Include="Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Model1.Context.cs</LastGenOutput>

@@ -50,7 +50,7 @@
             this.btnLogin.Style = MetroFramework.MetroColorStyle.Blue;
             this.btnLogin.TabIndex = 2;
             this.btnLogin.Text = "Login";
-            this.btnLogin.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.btnLogin.Theme = MetroFramework.MetroThemeStyle.Light;
             this.btnLogin.UseSelectable = true;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click_1);
             // 
@@ -62,7 +62,7 @@
             this.btnCreateNewAccount.Style = MetroFramework.MetroColorStyle.Blue;
             this.btnCreateNewAccount.TabIndex = 3;
             this.btnCreateNewAccount.Text = "Create New Account";
-            this.btnCreateNewAccount.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.btnCreateNewAccount.Theme = MetroFramework.MetroThemeStyle.Light;
             this.btnCreateNewAccount.UseSelectable = true;
             this.btnCreateNewAccount.Click += new System.EventHandler(this.btnCreateNewAccount_Click);
             // 
@@ -74,7 +74,7 @@
             this.btnHelp.Style = MetroFramework.MetroColorStyle.Blue;
             this.btnHelp.TabIndex = 4;
             this.btnHelp.Text = "Help";
-            this.btnHelp.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.btnHelp.Theme = MetroFramework.MetroThemeStyle.Light;
             this.btnHelp.UseSelectable = true;
             this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
             // 
@@ -106,9 +106,9 @@
             this.txtPassword.SelectionStart = 0;
             this.txtPassword.ShortcutsEnabled = true;
             this.txtPassword.Size = new System.Drawing.Size(261, 23);
-            this.txtPassword.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtPassword.Style = MetroFramework.MetroColorStyle.Orange;
             this.txtPassword.TabIndex = 1;
-            this.txtPassword.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.txtPassword.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtPassword.UseSelectable = true;
             this.txtPassword.WaterMark = "Please Enter Your Password";
             this.txtPassword.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -142,9 +142,9 @@
             this.txtUsername.SelectionStart = 0;
             this.txtUsername.ShortcutsEnabled = true;
             this.txtUsername.Size = new System.Drawing.Size(261, 23);
-            this.txtUsername.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtUsername.Style = MetroFramework.MetroColorStyle.Orange;
             this.txtUsername.TabIndex = 0;
-            this.txtUsername.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.txtUsername.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtUsername.UseSelectable = true;
             this.txtUsername.WaterMark = "Please Enter Your Username";
             this.txtUsername.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -166,8 +166,8 @@
             this.MinimumSize = new System.Drawing.Size(279, 258);
             this.Name = "frmLogin";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.Style = MetroFramework.MetroColorStyle.Orange;
             this.Text = "Login";
-            this.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager1)).EndInit();
             this.ResumeLayout(false);

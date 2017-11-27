@@ -23,9 +23,7 @@ namespace Test
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            this.StyleManager = metroStyleManager1;
-            metroStyleManager1.Theme = MetroFramework.MetroThemeStyle.Dark;
-            metroStyleManager1.Style = MetroFramework.MetroColorStyle.Blue;
+         
         }
 
         private void btnLogin_Click_1(object sender, EventArgs e)

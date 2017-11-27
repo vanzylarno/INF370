@@ -46,7 +46,7 @@
             this.metroLabel1.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroLabel1.TabIndex = 0;
             this.metroLabel1.Text = "To Help Us Find Your Password Please Provide The Following Inforamtion:";
-            this.metroLabel1.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroLabel1.Theme = MetroFramework.MetroThemeStyle.Light;
             // 
             // txtUsername
             // 
@@ -76,7 +76,7 @@
             this.txtUsername.Size = new System.Drawing.Size(504, 23);
             this.txtUsername.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtUsername.TabIndex = 1;
-            this.txtUsername.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.txtUsername.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtUsername.UseSelectable = true;
             this.txtUsername.WaterMark = "Please Enter Your Username:";
             this.txtUsername.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -90,7 +90,7 @@
             this.btnSendUserInfo.Style = MetroFramework.MetroColorStyle.Blue;
             this.btnSendUserInfo.TabIndex = 2;
             this.btnSendUserInfo.Text = "Send User Inforamtion";
-            this.btnSendUserInfo.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.btnSendUserInfo.Theme = MetroFramework.MetroThemeStyle.Light;
             this.btnSendUserInfo.UseSelectable = true;
             this.btnSendUserInfo.Click += new System.EventHandler(this.btnSendUserInfo_Click);
             // 
@@ -121,7 +121,7 @@
             this.txtUserSecurityQuestion.Size = new System.Drawing.Size(504, 23);
             this.txtUserSecurityQuestion.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtUserSecurityQuestion.TabIndex = 3;
-            this.txtUserSecurityQuestion.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.txtUserSecurityQuestion.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtUserSecurityQuestion.UseSelectable = true;
             this.txtUserSecurityQuestion.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtUserSecurityQuestion.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
@@ -154,7 +154,7 @@
             this.txtSecurityQuestionAnswer.Size = new System.Drawing.Size(504, 23);
             this.txtSecurityQuestionAnswer.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtSecurityQuestionAnswer.TabIndex = 4;
-            this.txtSecurityQuestionAnswer.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.txtSecurityQuestionAnswer.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtSecurityQuestionAnswer.UseSelectable = true;
             this.txtSecurityQuestionAnswer.WaterMark = "Please Provide The Answer For Your Security Question";
             this.txtSecurityQuestionAnswer.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -168,7 +168,7 @@
             this.btnFindPassword.Style = MetroFramework.MetroColorStyle.Blue;
             this.btnFindPassword.TabIndex = 5;
             this.btnFindPassword.Text = "Find Password";
-            this.btnFindPassword.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.btnFindPassword.Theme = MetroFramework.MetroThemeStyle.Light;
             this.btnFindPassword.UseSelectable = true;
             this.btnFindPassword.Click += new System.EventHandler(this.btnFindPassword_Click);
             // 
@@ -187,8 +187,8 @@
             this.MaximumSize = new System.Drawing.Size(517, 306);
             this.MinimumSize = new System.Drawing.Size(517, 306);
             this.Name = "Find_a_Forgotten_Password_Form";
+            this.Style = MetroFramework.MetroColorStyle.Orange;
             this.Text = "Find A Forgotten Password";
-            this.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.Load += new System.EventHandler(this.Find_a_Forgotten_Password_Form_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

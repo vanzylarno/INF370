@@ -46,7 +46,7 @@
             this.metroLabel1.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroLabel1.TabIndex = 0;
             this.metroLabel1.Text = "Select Server Name:";
-            this.metroLabel1.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroLabel1.Theme = MetroFramework.MetroThemeStyle.Light;
             // 
             // cbxServerName
             // 
@@ -57,7 +57,7 @@
             this.cbxServerName.Size = new System.Drawing.Size(275, 29);
             this.cbxServerName.Style = MetroFramework.MetroColorStyle.Blue;
             this.cbxServerName.TabIndex = 1;
-            this.cbxServerName.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.cbxServerName.Theme = MetroFramework.MetroThemeStyle.Light;
             this.cbxServerName.UseSelectable = true;
             this.cbxServerName.SelectedIndexChanged += new System.EventHandler(this.cbxServerName_SelectedIndexChanged);
             // 
@@ -70,7 +70,7 @@
             this.cbxDatabaseName.Size = new System.Drawing.Size(275, 29);
             this.cbxDatabaseName.Style = MetroFramework.MetroColorStyle.Blue;
             this.cbxDatabaseName.TabIndex = 3;
-            this.cbxDatabaseName.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.cbxDatabaseName.Theme = MetroFramework.MetroThemeStyle.Light;
             this.cbxDatabaseName.UseSelectable = true;
             this.cbxDatabaseName.SelectedIndexChanged += new System.EventHandler(this.cbxDatabaseName_SelectedIndexChanged);
             // 
@@ -84,7 +84,7 @@
             this.metroLabel2.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroLabel2.TabIndex = 2;
             this.metroLabel2.Text = "Select Database Name:";
-            this.metroLabel2.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroLabel2.Theme = MetroFramework.MetroThemeStyle.Light;
             // 
             // btnCreatebackup
             // 
@@ -94,7 +94,7 @@
             this.btnCreatebackup.Style = MetroFramework.MetroColorStyle.Blue;
             this.btnCreatebackup.TabIndex = 4;
             this.btnCreatebackup.Text = "Create Database Backup";
-            this.btnCreatebackup.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.btnCreatebackup.Theme = MetroFramework.MetroThemeStyle.Light;
             this.btnCreatebackup.UseSelectable = true;
             this.btnCreatebackup.Click += new System.EventHandler(this.btnCreatebackup_Click);
             // 
@@ -113,8 +113,8 @@
             this.MinimumSize = new System.Drawing.Size(322, 250);
             this.Name = "Database_Backup_Form";
             this.Resizable = false;
+            this.Style = MetroFramework.MetroColorStyle.Orange;
             this.Text = "Create Database Backup";
-            this.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.Load += new System.EventHandler(this.Database_Backup_Form_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
