@@ -64,5 +64,12 @@ namespace Test
             Inventory_Form myform = new Inventory_Form();
             myform.ShowDialog();
         }
+
+        private void metroTile1_Click(object sender, EventArgs e)
+        {
+            Calculator myform = new Calculator();
+            myform.ShowDialog();
+
+        }
     }
 }
