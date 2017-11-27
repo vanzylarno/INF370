@@ -106,12 +106,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(492, 492);
+            this.ClientSize = new System.Drawing.Size(497, 484);
             this.Controls.Add(this.metroTile2);
             this.Controls.Add(this.metroTile1);
             this.Controls.Add(this.mtDelete);
             this.Controls.Add(this.mtAdd);
             this.Name = "Inventory_Form";
+            this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Orange;
             this.Text = "Inventory";
             this.Load += new System.EventHandler(this.Inventory_Form_Load);
