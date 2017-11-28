@@ -33,6 +33,7 @@
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.btnAdminFeatures = new MetroFramework.Controls.MetroButton();
+            this.metroTile2 = new MetroFramework.Controls.MetroTile();
             this.metroTile1 = new MetroFramework.Controls.MetroTile();
             this.mtInventory = new MetroFramework.Controls.MetroTile();
             this.mtSettings = new MetroFramework.Controls.MetroTile();
@@ -99,10 +100,27 @@
             this.btnAdminFeatures.UseSelectable = true;
             this.btnAdminFeatures.Click += new System.EventHandler(this.btnAdminFeatures_Click);
             // 
+            // metroTile2
+            // 
+            this.metroTile2.ActiveControl = null;
+            this.metroTile2.Location = new System.Drawing.Point(23, 493);
+            this.metroTile2.Name = "metroTile2";
+            this.metroTile2.Size = new System.Drawing.Size(251, 195);
+            this.metroTile2.Style = MetroFramework.MetroColorStyle.Orange;
+            this.metroTile2.TabIndex = 16;
+            this.metroTile2.Text = "Sales";
+            this.metroTile2.TileImage = global::Test.Properties.Resources.Sales;
+            this.metroTile2.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroTile2.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
+            this.metroTile2.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
+            this.metroTile2.UseSelectable = true;
+            this.metroTile2.UseTileImage = true;
+            this.metroTile2.Click += new System.EventHandler(this.metroTile2_Click);
+            // 
             // metroTile1
             // 
             this.metroTile1.ActiveControl = null;
-            this.metroTile1.Location = new System.Drawing.Point(1097, 90);
+            this.metroTile1.Location = new System.Drawing.Point(1097, 91);
             this.metroTile1.Name = "metroTile1";
             this.metroTile1.Size = new System.Drawing.Size(251, 195);
             this.metroTile1.Style = MetroFramework.MetroColorStyle.Orange;
@@ -121,7 +139,7 @@
             this.mtInventory.ActiveControl = null;
             this.mtInventory.Location = new System.Drawing.Point(23, 292);
             this.mtInventory.Name = "mtInventory";
-            this.mtInventory.Size = new System.Drawing.Size(251, 184);
+            this.mtInventory.Size = new System.Drawing.Size(251, 195);
             this.mtInventory.Style = MetroFramework.MetroColorStyle.Orange;
             this.mtInventory.TabIndex = 14;
             this.mtInventory.Text = "Inventory";
@@ -190,7 +208,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1371, 687);
+            this.ClientSize = new System.Drawing.Size(1371, 711);
+            this.Controls.Add(this.metroTile2);
             this.Controls.Add(this.metroTile1);
             this.Controls.Add(this.mtInventory);
             this.Controls.Add(this.mtSettings);
@@ -224,5 +243,6 @@
         private MetroFramework.Controls.MetroTile mtSettings;
         private MetroFramework.Controls.MetroTile mtInventory;
         private MetroFramework.Controls.MetroTile metroTile1;
+        private MetroFramework.Controls.MetroTile metroTile2;
     }
 }

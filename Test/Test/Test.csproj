@@ -284,6 +284,12 @@
     <Compile Include="MainMenu.Designer.cs">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Make a New Sale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Make a New Sale.Designer.cs">
+      <DependentUpon>Make a New Sale.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model1.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -318,6 +324,12 @@
     </Compile>
     <Compile Include="Restore Database Form.Designer.cs">
       <DependentUpon>Restore Database Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales Form.Designer.cs">
+      <DependentUpon>Sales Form.cs</DependentUpon>
     </Compile>
     <Compile Include="Send a Supplier Order Help Page.cs">
       <SubType>Form</SubType>
@@ -435,6 +447,9 @@
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Make a New Sale.resx">
+      <DependentUpon>Make a New Sale.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
@@ -445,6 +460,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Restore Database Form.resx">
       <DependentUpon>Restore Database Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales Form.resx">
+      <DependentUpon>Sales Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Send a Supplier Order Help Page.resx">
       <DependentUpon>Send a Supplier Order Help Page.cs</DependentUpon>
@@ -529,6 +547,9 @@
     <None Include="bin\Images\Calculator.png" />
     <None Include="bin\Images\Backup.png" />
     <None Include="bin\Images\Restore.png" />
+    <None Include="bin\Images\Sales.png" />
+    <None Include="bin\Images\New Sale.png" />
+    <None Include="bin\Images\Refund Sale.png" />
     <Content Include="Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Model1.Context.cs</LastGenOutput>

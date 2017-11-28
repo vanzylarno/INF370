@@ -210,3 +210,5 @@ F:\GitHub\INF370\Test\Test\obj\Debug\Test.Add_new_User.resources
 F:\GitHub\INF370\Test\Test\obj\Debug\Test.Find_a_User.resources
 F:\GitHub\INF370\Test\Test\obj\Debug\Test.Delete_a_User.resources
 F:\GitHub\INF370\Test\Test\obj\Debug\Test.Update_a_User.resources
+F:\GitHub\INF370\Test\Test\obj\Debug\Test.Sales_Form.resources
+F:\GitHub\INF370\Test\Test\obj\Debug\Test.Make_a_New_Sale.resources

@@ -118,16 +118,18 @@ namespace Test
                 FileStream fs = new FileStream(FileLocation, FileMode.Open, FileAccess.Read);
                 BinaryReader br = new BinaryReader(fs);
                 image = br.ReadBytes((int)fs.Length);
+                decimal ProductPrice = Convert.ToDecimal(txtPrice.Text);
 
                 SqlConnection sqlcon = new SqlConnection(Globals_Class.ConnectionString);
                 sqlcon.Open();
-                string Command = "UPDATE Products SET ProductName = @ProductName, ProductType = @ProductType, ProductDescription = @ProductDescription, ProductQuantity = @ProductQuantity, ProductImage = @ProductImage";
+                string Command = "UPDATE Products SET ProductName = @ProductName, ProductType = @ProductType, ProductDescription = @ProductDescription, ProductQuantityInStock = @ProductQuantity, ProductImage = @ProductImage, ProductPrice = @ProductPrice";
                 SqlCommand sqlcom = new SqlCommand(Command, sqlcon);
                 sqlcom.Parameters.Add(new SqlParameter("@ProductName", Name));
                 sqlcom.Parameters.Add(new SqlParameter("@ProductType", Type));
                 sqlcom.Parameters.Add(new SqlParameter("@ProductDescription", Description));
                 sqlcom.Parameters.Add(new SqlParameter("@ProductQuantity", Quantity));
                 sqlcom.Parameters.Add(new SqlParameter("@ProductImage", image));
+                sqlcom.Parameters.Add(new SqlParameter("@ProductPrice", ProductPrice));
                 sqlcom.ExecuteNonQuery();
 
                 MetroFramework.MetroMessageBox.Show(this, "The Product Inforamtion has been Updated Successfully!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -137,6 +139,7 @@ namespace Test
                 txtProductName.Text = "";
                 txtDescription.Text = "";
                 FileLocation = "";
+                txtPrice.Text = "";
                 ChosenProductID = 0;
 
                 panel1.Hide();

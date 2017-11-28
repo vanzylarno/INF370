@@ -37,7 +37,7 @@ namespace Test
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            if (txtProductName.Text == "" || txtProductType.Text == "" || txtQuantity.Text == "" || txtDescription.Text == "" || FileLocation == "")
+            if (txtProductName.Text == "" || txtProductType.Text == "" || txtQuantity.Text == "" || txtDescription.Text == "" || FileLocation == "" || txtPrice.Text == "")
             {
                 MetroFramework.MetroMessageBox.Show(this, "Not all information required has been provided!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
@@ -49,6 +49,7 @@ namespace Test
                     string productName = txtProductName.Text;
                     string ProductType = txtProductType.Text;
                     string ProductDescription = txtDescription.Text;
+                    decimal productPrice = Convert.ToDecimal(txtPrice.Text);
                     int Quantity = Convert.ToInt32(txtQuantity.Text);
                     byte[] image = null;
                     FileStream fs = new FileStream(FileLocation, FileMode.Open, FileAccess.Read);
@@ -57,13 +58,14 @@ namespace Test
 
                     SqlConnection sqlcon = new SqlConnection(Globals_Class.ConnectionString);
                     sqlcon.Open();
-                    string Insert = "INSERT INTO Products(ProductName, ProductType, ProductDescription, ProductQuantity, ProductImage) VALUES(@ProductName, @ProductType, @ProductDescription, @ProductQuantity, @ProductImage)";
+                    string Insert = "INSERT INTO Products(ProductName, ProductType, ProductDescription, ProductQuantityInStock, ProductImage, ProductPrice) VALUES(@ProductName, @ProductType, @ProductDescription, @ProductQuantity, @ProductImage, @ProductPrice)";
                     SqlCommand sqlcom = new SqlCommand(Insert, sqlcon);
                     sqlcom.Parameters.Add(new SqlParameter("@ProductName", productName));
                     sqlcom.Parameters.Add(new SqlParameter("@ProductType", ProductType));
                     sqlcom.Parameters.Add(new SqlParameter("@ProductDescription", ProductDescription));
                     sqlcom.Parameters.Add(new SqlParameter("@ProductQuantity", Quantity));
                     sqlcom.Parameters.Add(new SqlParameter("@ProductImage", image));
+                    sqlcom.Parameters.Add(new SqlParameter("@ProductPrice", productPrice));
                     sqlcom.ExecuteNonQuery();
 
                     MetroFramework.MetroMessageBox.Show(this, "The New Product was Added Successfully!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -72,6 +74,7 @@ namespace Test
                     txtProductType.Text = "";
                     txtQuantity.Text = "";
                     FileLocation = "";
+                    txtPrice.Text = "";
                     btnAdd.Enabled = false;
 
                 }

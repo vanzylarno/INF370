@@ -22,6 +22,7 @@ namespace Test
         private void Find_Inventory_Product_Load(object sender, EventArgs e)
         {
             txtName.Enabled = false;
+            txtPrice.Enabled = false;
             txtDescription.Enabled = false;
             txtType.Enabled = false;
             txtQuantity.Enabled = false;
@@ -69,7 +70,7 @@ namespace Test
             {
                 SqlConnection sqlcon = new SqlConnection(Globals_Class.ConnectionString);
                 sqlcon.Open();
-                string Command = "SELECT ProductName, ProductType, ProductDescription, ProductQuantity, ProductImage FROM Products WHERE ProductName ='" + listBox1.Text.ToString() + "'";
+                string Command = "SELECT ProductName, ProductType, ProductDescription, ProductQuantityInStock, ProductImage, ProductPrice FROM Products WHERE ProductName ='" + listBox1.Text.ToString() + "'";
                 SqlCommand sqlcom = new SqlCommand(Command, sqlcon);
                 SqlDataReader dr;
                 SqlDataAdapter da = new SqlDataAdapter(sqlcom);
@@ -90,8 +91,8 @@ namespace Test
                         txtName.Text = (dr["ProductName"].ToString());
                         txtType.Text = (dr["ProductType"].ToString());
                         txtDescription.Text = (dr["ProductDescription"].ToString());
-                        txtQuantity.Text = Convert.ToString((dr["ProductQuantity"]));
-
+                        txtQuantity.Text = Convert.ToString((dr["ProductQuantityInStock"]));
+                        txtPrice.Text = (dr["ProductPrice"].ToString());
                     }
                 }
                 dr.Close();
@@ -102,6 +103,11 @@ namespace Test
                 MetroFramework.MetroMessageBox.Show(this, "An Error Occurred Whilst Retrieving your ProductN Information!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             
+
+        }
+
+        private void txtFilter_Click(object sender, EventArgs e)
+        {
 
         }
     }

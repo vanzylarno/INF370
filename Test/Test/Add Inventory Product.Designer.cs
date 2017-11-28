@@ -35,6 +35,7 @@
             this.btnChooseImage = new MetroFramework.Controls.MetroButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnAdd = new MetroFramework.Controls.MetroButton();
+            this.txtPrice = new MetroFramework.Controls.MetroTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -154,7 +155,7 @@
             this.txtQuantity.MaxLength = 32767;
             this.txtQuantity.Name = "txtQuantity";
             this.txtQuantity.PasswordChar = '\0';
-            this.txtQuantity.PromptText = "Enter the Quantity of the Product";
+            this.txtQuantity.PromptText = "Enter the Quantity of the Product in Stock";
             this.txtQuantity.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txtQuantity.SelectedText = "";
             this.txtQuantity.SelectionLength = 0;
@@ -163,13 +164,13 @@
             this.txtQuantity.Size = new System.Drawing.Size(238, 23);
             this.txtQuantity.TabIndex = 3;
             this.txtQuantity.UseSelectable = true;
-            this.txtQuantity.WaterMark = "Enter the Quantity of the Product";
+            this.txtQuantity.WaterMark = "Enter the Quantity of the Product in Stock";
             this.txtQuantity.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtQuantity.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
             // btnChooseImage
             // 
-            this.btnChooseImage.Location = new System.Drawing.Point(267, 285);
+            this.btnChooseImage.Location = new System.Drawing.Point(267, 314);
             this.btnChooseImage.Name = "btnChooseImage";
             this.btnChooseImage.Size = new System.Drawing.Size(182, 56);
             this.btnChooseImage.TabIndex = 4;
@@ -181,13 +182,13 @@
             // 
             this.pictureBox1.Location = new System.Drawing.Point(267, 119);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(182, 160);
+            this.pictureBox1.Size = new System.Drawing.Size(182, 189);
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(23, 347);
+            this.btnAdd.Location = new System.Drawing.Point(24, 376);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(426, 56);
             this.btnAdd.TabIndex = 6;
@@ -195,11 +196,44 @@
             this.btnAdd.UseSelectable = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
+            // txtPrice
+            // 
+            // 
+            // 
+            // 
+            this.txtPrice.CustomButton.Image = null;
+            this.txtPrice.CustomButton.Location = new System.Drawing.Point(215, 1);
+            this.txtPrice.CustomButton.Name = "";
+            this.txtPrice.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.txtPrice.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtPrice.CustomButton.TabIndex = 1;
+            this.txtPrice.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtPrice.CustomButton.UseSelectable = true;
+            this.txtPrice.CustomButton.Visible = false;
+            this.txtPrice.Lines = new string[0];
+            this.txtPrice.Location = new System.Drawing.Point(24, 347);
+            this.txtPrice.MaxLength = 32767;
+            this.txtPrice.Name = "txtPrice";
+            this.txtPrice.PasswordChar = '\0';
+            this.txtPrice.PromptText = "Enter the Product Price";
+            this.txtPrice.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtPrice.SelectedText = "";
+            this.txtPrice.SelectionLength = 0;
+            this.txtPrice.SelectionStart = 0;
+            this.txtPrice.ShortcutsEnabled = true;
+            this.txtPrice.Size = new System.Drawing.Size(237, 23);
+            this.txtPrice.TabIndex = 7;
+            this.txtPrice.UseSelectable = true;
+            this.txtPrice.WaterMark = "Enter the Product Price";
+            this.txtPrice.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtPrice.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
             // Add_Inventory_Product
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(465, 426);
+            this.ClientSize = new System.Drawing.Size(465, 444);
+            this.Controls.Add(this.txtPrice);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnChooseImage);
@@ -208,7 +242,7 @@
             this.Controls.Add(this.txtProductType);
             this.Controls.Add(this.txtProductName);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(465, 426);
+            this.MaximumSize = new System.Drawing.Size(465, 444);
             this.Name = "Add_Inventory_Product";
             this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Orange;
@@ -228,5 +262,6 @@
         private MetroFramework.Controls.MetroButton btnChooseImage;
         private System.Windows.Forms.PictureBox pictureBox1;
         private MetroFramework.Controls.MetroButton btnAdd;
+        private MetroFramework.Controls.MetroTextBox txtPrice;
     }
 }
