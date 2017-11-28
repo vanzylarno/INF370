@@ -75,6 +75,7 @@
             this.lbxSupplierOrderProducts.Name = "lbxSupplierOrderProducts";
             this.lbxSupplierOrderProducts.Size = new System.Drawing.Size(196, 251);
             this.lbxSupplierOrderProducts.TabIndex = 3;
+            this.lbxSupplierOrderProducts.SelectedIndexChanged += new System.EventHandler(this.lbxSupplierOrderProducts_SelectedIndexChanged);
             // 
             // txtQuantity
             // 

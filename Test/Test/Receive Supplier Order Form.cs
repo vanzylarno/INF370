@@ -198,7 +198,7 @@ namespace Test
                 //Get ProductID
                 SqlConnection sqlcon2 = new SqlConnection(Globals_Class.ConnectionString);
                 sqlcon2.Open();
-                string Select = "SELECT SupplierOrderProductID FROM SupplierOrder WHERE SupplierOrderID ='" + lbxSupplierOrders.Text.ToString() + "'";
+                string Select = "SELECT ProductID FROM SupplierOrder WHERE SupplierOrderID ='" + lbxSupplierOrders.Text.ToString() + "'";
                 SqlCommand sqlcom2 = new SqlCommand(Select, sqlcon2);
                 SqlDataReader myReader;
                 myReader = sqlcom2.ExecuteReader();
@@ -207,7 +207,7 @@ namespace Test
                 {
                     while (myReader.Read())
                     {
-                        ProductID = Convert.ToInt32((myReader["SupplierOrderProductID"]));
+                        ProductID = Convert.ToInt32((myReader["ProductID"]));
                     }
                 }
                 myReader.Close();
@@ -216,7 +216,7 @@ namespace Test
                 //Load Product Name
                 SqlConnection sqlcon5 = new SqlConnection(Globals_Class.ConnectionString);
                 sqlcon5.Open();
-                string Select5 = "SELECT SupplierOrderProductName FROM SupplierOrderProduct WHERE SupplierOrderProductID ='" + ProductID + "'";
+                string Select5 = "SELECT ProductName FROM Products WHERE ProductID ='" + ProductID + "'";
                 SqlCommand sqlcom5 = new SqlCommand(Select5, sqlcon5);
                 SqlDataReader myReader5;
                 myReader5 = sqlcom5.ExecuteReader();
@@ -225,8 +225,8 @@ namespace Test
                 {
                     while (myReader5.Read())
                     {
-                        lblProductOrdered.Text = (myReader5["SupplierOrderProductName"].ToString());
-                        ProductName = (myReader5["SupplierOrderProductName"].ToString());
+                        lblProductOrdered.Text = (myReader5["ProductName"].ToString());
+                        ProductName = (myReader5["ProductName"].ToString());
                     }
                 }
                 myReader5.Close();
@@ -298,7 +298,45 @@ namespace Test
                     sqlcom.ExecuteNonQuery();
 
                     MetroFramework.MetroMessageBox.Show(this, "The Order has been Received Successfully!", "Message", MessageBoxButtons.OK, MessageBoxIcon.None);
+
+                //Update Quantity in Stock
+                //Update Stock Quantity
+                int QinStock;
+                int QReceived;
+                int QLeft;
+                int ProductID;
+
+                SqlConnection sqlcon1 = new SqlConnection(Globals_Class.ConnectionString);
+                sqlcon1.Open();
+                string SelectQinStock = "SELECT ProductQuantityInStock, ProductID FROM Products WHERE ProductName ='" + lblProductOrdered.Text + "'";
+                SqlCommand sqlcom2 = new SqlCommand(SelectQinStock, sqlcon1);
+                SqlDataReader dr;
+                dr = sqlcom2.ExecuteReader();
+                if (dr.HasRows)
+                {
+                    while (dr.Read())
+                    {
+                        QinStock = Convert.ToInt32((dr["ProductQuantityInStock"]));
+                        QReceived = Convert.ToInt32(lblQuantityOrdered.Text);
+                        QLeft = QinStock + QReceived;
+                        ProductID = Convert.ToInt32((dr["ProductID"]));
+                        //   try
+                        //    {
+                        SqlConnection sqlcon3 = new SqlConnection(Globals_Class.ConnectionString);
+                        sqlcon3.Open();
+                        string cmd2 = "UPDATE Products SET ProductQuantityInStock ='" + QLeft.ToString() + "' WHERE ProductID ='" + ProductID.ToString() + "'";
+                        SqlCommand sqlcom3 = new SqlCommand(cmd2, sqlcon3);
+                        sqlcom3.ExecuteNonQuery();
+                        sqlcon3.Close();
+                        //  }
+                        // catch
+                        //  {
+                        //      MetroFramework.MetroMessageBox.Show(this, "An Error Occurred Whilst Updating your Stock Information!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        // }
+                    }
                 }
+                sqlcon1.Close();
+            }
                 catch
                 {
 

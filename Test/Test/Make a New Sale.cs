@@ -182,7 +182,7 @@ namespace Test
         {
             try
             {
-
+                //Place Order
                 foreach (DataGridViewRow row in dataGridView1.Rows)
                 {
 
@@ -198,10 +198,51 @@ namespace Test
                     sqlcon.Close();
 
 
+                    //Update Stock Quantity
+                    int QinStock;
+                    int QPurchased;
+                    int QLeft;
+                    int ProductID;
+
+                    SqlConnection sqlcon1 = new SqlConnection(Globals_Class.ConnectionString);
+                    sqlcon1.Open();
+                    string SelectQinStock = "SELECT ProductQuantityInStock, ProductID FROM Products WHERE ProductName ='" + row.Cells["colItemName"].Value.ToString() + "'";
+                    SqlCommand sqlcom2 = new SqlCommand(SelectQinStock, sqlcon1);
+                    SqlDataReader dr;
+                    dr = sqlcom2.ExecuteReader();
+                    if (dr.HasRows)
+                    {
+                        while(dr.Read())
+                        {
+                            QinStock = Convert.ToInt32((dr["ProductQuantityInStock"]));
+                            QPurchased = Convert.ToInt32(row.Cells["colItemQuantity"].Value);
+                            QLeft = QinStock - QPurchased;
+                            ProductID = Convert.ToInt32((dr["ProductID"]));
+                         //   try
+                        //    {
+                                SqlConnection sqlcon3 = new SqlConnection(Globals_Class.ConnectionString);
+                                sqlcon3.Open();
+                                string cmd = "UPDATE Products SET ProductQuantityInStock ='" + QLeft.ToString() + "' WHERE ProductID ='" + ProductID.ToString() + "'";
+                                SqlCommand sqlcom3 = new SqlCommand(cmd, sqlcon3);
+                                sqlcom3.ExecuteNonQuery();
+                                sqlcon3.Close();
+                          //  }
+                           // catch
+                          //  {
+                          //      MetroFramework.MetroMessageBox.Show(this, "An Error Occurred Whilst Updating your Stock Information!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                           // }
+                        }
+                    }
+                    sqlcon1.Close();
+
+
+
                 }
 
                 MetroFramework.MetroMessageBox.Show(this, "The New Sale was Captured Successfully!", "Message", MessageBoxButtons.OK, MessageBoxIcon.None);
                 this.dataGridView1.Rows.Clear();
+
+             
 
             }
             catch

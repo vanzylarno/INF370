@@ -62,7 +62,7 @@ namespace Test
             lbxSupplierOrderProducts.Items.Clear();
             SqlConnection sqlcon2 = new SqlConnection(Globals_Class.ConnectionString);
             sqlcon2.Open();
-            string Select2 = "SELECT SupplierOrderProductName FROM SupplierOrderProduct";
+            string Select2 = "SELECT ProductName FROM Products";
             SqlCommand sqlcom2 = new SqlCommand(Select2, sqlcon2);
             SqlDataReader Dr2;
             Dr2 = sqlcom2.ExecuteReader();
@@ -70,7 +70,7 @@ namespace Test
             {
                 while (Dr2.Read())
                 {
-                    lbxSupplierOrderProducts.Items.Add(Dr2["SupplierOrderProductName"].ToString());
+                    lbxSupplierOrderProducts.Items.Add(Dr2["ProductName"].ToString());
                 }
             }
             Dr2.Close();
@@ -92,9 +92,15 @@ namespace Test
             else
             {
                 try
-                {
+              {
                     try
-                    {//Get Selected Supplier
+                   {
+                        //Get Quantity and Date
+                        SupplierOrderQuantity = Convert.ToInt32(txtQuantity.Text);
+
+                        dateTime = CalenderPick.SelectionStart.Date;
+
+                        //Get Selected Supplier
                         SqlConnection sqlcon = new SqlConnection(Globals_Class.ConnectionString);
                         sqlcon.Open();
                         string Command = "SELECT SupplierID, SupplierEmailAddress, SupplierName FROM SupplierInforamtion WHERE SupplierName ='" + lbxSuppliers.Text.ToString() + "'";
@@ -117,7 +123,7 @@ namespace Test
                         //Get Selected Product
                         SqlConnection sqlcon2 = new SqlConnection(Globals_Class.ConnectionString);
                         sqlcon2.Open();
-                        string Command2 = "SELECT SupplierOrderProductID, SupplierOrderProductName FROM SupplierOrderProduct WHERE SupplierOrderProductName ='" + lbxSupplierOrderProducts.Text.ToString() + "'";
+                        string Command2 = "SELECT ProductID, ProductName FROM Products WHERE ProductName ='" + lbxSupplierOrderProducts.Text.ToString() + "'";
                         SqlCommand sqlcom2 = new SqlCommand(Command2, sqlcon2);
                         SqlDataReader dr2;
                         dr2 = sqlcom2.ExecuteReader();
@@ -126,29 +132,26 @@ namespace Test
                         {
                             while (dr2.Read())
                             {
-                                SelectedSupplierOrderProductID = Convert.ToInt32((dr2["SupplierOrderProductID"]));
-                                SelectedSupplierOrderProductName = (dr2["SupplierOrderProductName"].ToString());
+                                SelectedSupplierOrderProductID = Convert.ToInt32((dr2["ProductID"]));
+                                SelectedSupplierOrderProductName = (dr2["ProductName"].ToString());
                             }
                         }
                         dr2.Close();
                         sqlcon2.Close();
 
-                        //Get Quantity and Date
-                        SupplierOrderQuantity = Convert.ToInt32(txtQuantity.Text);
                         
-                        dateTime = CalenderPick.SelectionStart.Date;
 
                         //Insert Values into SupplierOrder Table
                         SqlConnection sqlcon3 = new SqlConnection(Globals_Class.ConnectionString);
                         sqlcon3.Open();
-                        string Command3 = "INSERT INTO SupplierOrder(SupplierID, SupplierOrderQuantity, SupplierOrderDate, SupplierOrderProductID) VALUES(@SupplierID, @SupplierOrderQuantity, @SupplierOrderDate, @SupplierOrderProductID)";
+                        string Command3 = "INSERT INTO SupplierOrder(SupplierID, SupplierOrderQuantity, SupplierOrderDate, ProductID) VALUES(@SupplierID, @SupplierOrderQuantity, @SupplierOrderDate, @ProductID)";
                         SqlCommand sqlcom3 = new SqlCommand(Command3, sqlcon3);
                         sqlcom3.Parameters.Add(new SqlParameter("@SupplierID", SelectedSupplierID));
                         sqlcom3.Parameters.Add(new SqlParameter("@SupplierOrderQuantity", SupplierOrderQuantity));
-                        sqlcom3.Parameters.Add(new SqlParameter("SupplierOrderDate", dateTime));
-                        sqlcom3.Parameters.Add(new SqlParameter("@SupplierOrderProductID", SelectedSupplierOrderProductID));
+                        sqlcom3.Parameters.Add(new SqlParameter("@SupplierOrderDate", dateTime));
+                        sqlcom3.Parameters.Add(new SqlParameter("@ProductID", SelectedSupplierOrderProductID));
                         sqlcom3.ExecuteNonQuery();
-                        sqlcon3.Close();
+                        
                         sqlcon3.Close();
 
                         //Notify Supplier
@@ -177,11 +180,11 @@ namespace Test
                             smtp.Send(message);
                         }
                             MetroFramework.MetroMessageBox.Show(this, "The New Supplier Order was Captured Successfully and the Supplier has been notified of the Order!", "Message", MessageBoxButtons.OK, MessageBoxIcon.None);
-                    }
-                    catch
+                   }
+                   catch
                     {
-                        MetroFramework.MetroMessageBox.Show(this, "The New Supplier Order was not captured due to the Supplier not being Notified!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
+                       MetroFramework.MetroMessageBox.Show(this, "The New Supplier Order was not captured due to the Supplier not being Notified!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                   }
                 }
                 catch
                 {
@@ -220,7 +223,7 @@ namespace Test
             lbxSupplierOrderProducts.Items.Clear();
             SqlConnection sqlcon2 = new SqlConnection(Globals_Class.ConnectionString);
             sqlcon2.Open();
-            string Select2 = "SELECT SupplierOrderProductName FROM SupplierOrderProduct";
+            string Select2 = "SELECT ProductName FROM Products";
             SqlCommand sqlcom2 = new SqlCommand(Select2, sqlcon2);
             SqlDataReader Dr2;
             Dr2 = sqlcom2.ExecuteReader();
@@ -228,12 +231,16 @@ namespace Test
             {
                 while (Dr2.Read())
                 {
-                    lbxSupplierOrderProducts.Items.Add(Dr2["SupplierOrderProductName"].ToString());
+                    lbxSupplierOrderProducts.Items.Add(Dr2["ProductName"].ToString());
                 }
             }
             Dr2.Close();
             sqlcon2.Close();
         }
 
+        private void lbxSupplierOrderProducts_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
