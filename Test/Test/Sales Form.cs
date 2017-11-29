@@ -27,5 +27,11 @@ namespace Test
             Make_a_New_Sale myform = new Make_a_New_Sale();
             myform.ShowDialog();
         }
+
+        private void metroTile2_Click(object sender, EventArgs e)
+        {
+            Refund_Sale myform = new Refund_Sale();
+            myform.ShowDialog();
+        }
     }
 }

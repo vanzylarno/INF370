@@ -197,7 +197,6 @@ F:\GitHub\INF370\Test\Test\obj\Debug\Test.pdb
 F:\GitHub\INF370\Test\Test\obj\Debug\Test.Update_a_Supplier_Form.resources
 F:\GitHub\INF370\Test\Test\obj\Debug\Test.Find_A_Supplier_Form.resources
 F:\GitHub\INF370\Test\Test\obj\Debug\Test.Send_Supplier_Order.resources
-F:\GitHub\INF370\Test\Test\obj\Debug\Test.Add_new_Supplier_Order_Product.resources
 F:\GitHub\INF370\Test\Test\obj\Debug\Test.Send_a_Supplier_Order_Help_Page.resources
 F:\GitHub\INF370\Test\Test\obj\Debug\Test.Receive_Supplier_Order_Form.resources
 F:\GitHub\INF370\Test\Test\obj\Debug\Test.Add_Inventory_Product.resources
@@ -212,3 +211,4 @@ F:\GitHub\INF370\Test\Test\obj\Debug\Test.Delete_a_User.resources
 F:\GitHub\INF370\Test\Test\obj\Debug\Test.Update_a_User.resources
 F:\GitHub\INF370\Test\Test\obj\Debug\Test.Sales_Form.resources
 F:\GitHub\INF370\Test\Test\obj\Debug\Test.Make_a_New_Sale.resources
+F:\GitHub\INF370\Test\Test\obj\Debug\Test.Refund_Sale.resources

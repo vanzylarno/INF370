@@ -36,7 +36,7 @@ namespace Test
         {
             this.Close();
             this.Dispose(true);
-            Add_new_Supplier_Order_Product myform = new Add_new_Supplier_Order_Product();
+            Add_Inventory_Product myform = new Add_Inventory_Product();
             myform.ShowDialog();
         }
     }
