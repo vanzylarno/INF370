@@ -19,6 +19,8 @@ namespace Test
             InitializeComponent();
         }
         
+        int FinalCost;
+        int CurrentCost = 0;
 
         private void Make_a_New_Sale_Load(object sender, EventArgs e)
         {
@@ -218,28 +220,31 @@ namespace Test
                             QPurchased = Convert.ToInt32(row.Cells["colItemQuantity"].Value);
                             QLeft = QinStock - QPurchased;
                             ProductID = Convert.ToInt32((dr["ProductID"]));
-                         //   try
-                        //    {
+                        
                                 SqlConnection sqlcon3 = new SqlConnection(Globals_Class.ConnectionString);
                                 sqlcon3.Open();
                                 string cmd = "UPDATE Products SET ProductQuantityInStock ='" + QLeft.ToString() + "' WHERE ProductID ='" + ProductID.ToString() + "'";
                                 SqlCommand sqlcom3 = new SqlCommand(cmd, sqlcon3);
                                 sqlcom3.ExecuteNonQuery();
                                 sqlcon3.Close();
-                          //  }
-                           // catch
-                          //  {
-                          //      MetroFramework.MetroMessageBox.Show(this, "An Error Occurred Whilst Updating your Stock Information!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                           // }
                         }
                     }
-                    sqlcon1.Close();
+
 
 
 
                 }
 
-                MetroFramework.MetroMessageBox.Show(this, "The New Sale was Captured Successfully!", "Message", MessageBoxButtons.OK, MessageBoxIcon.None);
+                //Calculate Sale Total
+                int sum = 0;
+                for (int i = 0; i < dataGridView1.Rows.Count; ++i)
+                {
+                    sum += Convert.ToInt32(dataGridView1.Rows[i].Cells[2].Value);
+                }
+              
+
+
+                MetroFramework.MetroMessageBox.Show(this, "The New Sale was Captured Successfully! The Total Cost of this Sale is:" + "\n" + "R" + " " + sum.ToString() + " " , "Message", MessageBoxButtons.OK, MessageBoxIcon.None);
                 this.dataGridView1.Rows.Clear();
 
              
