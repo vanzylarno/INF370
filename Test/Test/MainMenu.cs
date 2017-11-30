@@ -77,5 +77,11 @@ namespace Test
             Sales_Form myform = new Sales_Form();
             myform.ShowDialog();
         }
+
+        private void metroTile3_Click(object sender, EventArgs e)
+        {
+            Customer_s_Form myform = new Customer_s_Form();
+            myform.ShowDialog();
+        }
     }
 }

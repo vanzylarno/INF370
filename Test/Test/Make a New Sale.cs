@@ -18,9 +18,11 @@ namespace Test
         {
             InitializeComponent();
         }
-        
+        string SelectedCustomer;
+        int isMember;
         int FinalCost;
         int CurrentCost = 0;
+        decimal CurrentPoints;
 
         private void Make_a_New_Sale_Load(object sender, EventArgs e)
         {
@@ -50,6 +52,21 @@ namespace Test
                 }
                 dr.Close();
                 sqlcon.Close();
+
+                //Add Customers
+                SqlConnection sqlcon2 = new SqlConnection(Globals_Class.ConnectionString);
+                sqlcon2.Open();
+                string Select = "SELECT CustomerFullName FROM Customers";
+                SqlCommand sqlcom2 = new SqlCommand(Select, sqlcon2);
+                SqlDataReader dr2;
+                dr2 = sqlcom2.ExecuteReader();
+                if (dr2.HasRows)
+                {
+                    while (dr2.Read())
+                    {
+                        cbxCustomerName.Items.Add((dr2["CustomerFullName"].ToString()));
+                    }
+                }
             }
             catch
             {
@@ -165,8 +182,9 @@ namespace Test
                     this.dataGridView1.Rows.Add(ItemName, Quantity.ToString(), LinePrice.ToString());
                     btnCaptureSale.Enabled = true;
 
-
+                    SelectedCustomer = cbxCustomerName.Text;
                     txtQuantityPurchased.Text = "";
+                    cbxCustomerName.Enabled = false;
                     
 
                 }
@@ -230,13 +248,83 @@ namespace Test
                         }
                     }
 
+                    //Add Loyalty Points
+                    //Get Loyalty Membership
+                    try
+                    {
+                        SqlConnection sqlcon5 = new SqlConnection(Globals_Class.ConnectionString);
+                        sqlcon5.Open();
+                        string GetMembership = "SELECT isMember From Customers Where CustomerFullName ='" + SelectedCustomer.ToString() + "'";
+                        SqlCommand sqlcom5 = new SqlCommand(GetMembership, sqlcon5);
+                        SqlDataReader dr5;
+                        dr5 = sqlcom5.ExecuteReader();
+                        if (dr5.HasRows)
+                        {
+                            while (dr5.Read())
+                            {
+                                isMember = Convert.ToInt32((dr5["isMember"]));
+                            }
+                        }
+                        dr5.Close();
+                        sqlcon5.Close();
 
+                    }
+                    catch
+                    {
+                        isMember = 0;
+                    }
+                    //Get Current Points
+                    try
+                    {
+                        SqlConnection sqlcon9 = new SqlConnection(Globals_Class.ConnectionString);
+                        sqlcon9.Open();
+                        string GetPoints = "SELECT LoyaltyPointsAvailable FROM Customers WHERE CustomerFullName ='" + SelectedCustomer.ToString() + "'";
+                        SqlCommand sqlcom9 = new SqlCommand(GetPoints, sqlcon9);
+                        SqlDataReader dr9;
+                        dr9 = sqlcom9.ExecuteReader();
+                        if (dr9.HasRows)
+                        {
+                            while (dr9.Read())
+                            {
+                                CurrentPoints = Convert.ToDecimal((dr9["LoyaltyPointsAvailable"]));
+                            }
+                        }
+                        dr9.Close();
+                        sqlcon9.Close();
+
+                    }
+                    catch
+                    {
+
+                    }
+
+
+                    if (isMember == 1)
+                    {
+
+                        decimal PointsReceived;
+                        decimal FinalPoints;
+                        PointsReceived = Convert.ToDecimal(row.Cells["colLinePrice"].Value) * Convert.ToDecimal(Globals_Class.loyaltyPointsPercentage);
+                        FinalPoints = CurrentPoints + PointsReceived;
+
+                        //Add Points
+                        SqlConnection sqlcon66 = new SqlConnection(Globals_Class.ConnectionString);
+                        sqlcon66.Open();
+                        string UpdatePoints = "UPDATE Customers SET LoyaltyPointsAvailable ='" + FinalPoints.ToString() + "' WHERE CustomerFullName ='" + SelectedCustomer.ToString() + "'";
+                        SqlCommand sqlcom66 = new SqlCommand(UpdatePoints, sqlcon66);
+                        sqlcom66.ExecuteNonQuery();
+                        sqlcon66.Close();
+                    }
+                    else
+                    {
+
+                    }
 
 
                 }
 
                 //Calculate Sale Total
-                int sum = 0;
+                decimal sum = 0;
                 for (int i = 0; i < dataGridView1.Rows.Count; ++i)
                 {
                     sum += Convert.ToInt32(dataGridView1.Rows[i].Cells[2].Value);
@@ -247,6 +335,11 @@ namespace Test
                 MetroFramework.MetroMessageBox.Show(this, "The New Sale was Captured Successfully! The Total Cost of this Sale is:" + "\n" + "R" + " " + sum.ToString() + " " , "Message", MessageBoxButtons.OK, MessageBoxIcon.None);
                 this.dataGridView1.Rows.Clear();
 
+
+                cbxCustomerName.Text = "";
+                cbxCustomerName.Enabled = true;
+
+
              
 
             }
@@ -254,7 +347,18 @@ namespace Test
             {
                 MetroFramework.MetroMessageBox.Show(this, "An Error Occurred Whilst Capturing your Sale Information!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 this.dataGridView1.Rows.Clear();
+                cbxCustomerName.Enabled = true;
             }
+        }
+
+        private void txtFilter_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Basket_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

@@ -33,6 +33,7 @@
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.btnAdminFeatures = new MetroFramework.Controls.MetroButton();
+            this.metroTile3 = new MetroFramework.Controls.MetroTile();
             this.metroTile2 = new MetroFramework.Controls.MetroTile();
             this.metroTile1 = new MetroFramework.Controls.MetroTile();
             this.mtInventory = new MetroFramework.Controls.MetroTile();
@@ -99,6 +100,23 @@
             this.btnAdminFeatures.Theme = MetroFramework.MetroThemeStyle.Light;
             this.btnAdminFeatures.UseSelectable = true;
             this.btnAdminFeatures.Click += new System.EventHandler(this.btnAdminFeatures_Click);
+            // 
+            // metroTile3
+            // 
+            this.metroTile3.ActiveControl = null;
+            this.metroTile3.Location = new System.Drawing.Point(280, 90);
+            this.metroTile3.Name = "metroTile3";
+            this.metroTile3.Size = new System.Drawing.Size(251, 195);
+            this.metroTile3.Style = MetroFramework.MetroColorStyle.Orange;
+            this.metroTile3.TabIndex = 17;
+            this.metroTile3.Text = "Customers";
+            this.metroTile3.TileImage = global::Test.Properties.Resources.Customer;
+            this.metroTile3.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroTile3.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
+            this.metroTile3.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
+            this.metroTile3.UseSelectable = true;
+            this.metroTile3.UseTileImage = true;
+            this.metroTile3.Click += new System.EventHandler(this.metroTile3_Click);
             // 
             // metroTile2
             // 
@@ -209,6 +227,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1371, 711);
+            this.Controls.Add(this.metroTile3);
             this.Controls.Add(this.metroTile2);
             this.Controls.Add(this.metroTile1);
             this.Controls.Add(this.mtInventory);
@@ -244,5 +263,6 @@
         private MetroFramework.Controls.MetroTile mtInventory;
         private MetroFramework.Controls.MetroTile metroTile1;
         private MetroFramework.Controls.MetroTile metroTile2;
+        private MetroFramework.Controls.MetroTile metroTile3;
     }
 }

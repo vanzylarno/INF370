@@ -45,14 +45,16 @@
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.btnAddToBasket = new MetroFramework.Controls.MetroButton();
             this.Basket = new System.Windows.Forms.Panel();
+            this.metroLabel7 = new MetroFramework.Controls.MetroLabel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btnCaptureSale = new MetroFramework.Controls.MetroButton();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.txtQuantityPurchased = new MetroFramework.Controls.MetroTextBox();
             this.colItemName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colItemQuantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colLinePrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.metroLabel7 = new MetroFramework.Controls.MetroLabel();
+            this.btnCaptureSale = new MetroFramework.Controls.MetroButton();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.txtQuantityPurchased = new MetroFramework.Controls.MetroTextBox();
+            this.cbxCustomerName = new MetroFramework.Controls.MetroComboBox();
+            this.metroLabel8 = new MetroFramework.Controls.MetroLabel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.Basket.SuspendLayout();
@@ -101,6 +103,7 @@
             this.txtFilter.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtFilter.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             this.txtFilter.TextChanged += new System.EventHandler(this.txtFilter_TextChanged);
+            this.txtFilter.Click += new System.EventHandler(this.txtFilter_Click);
             // 
             // panel1
             // 
@@ -316,7 +319,7 @@
             // 
             // btnAddToBasket
             // 
-            this.btnAddToBasket.Location = new System.Drawing.Point(221, 541);
+            this.btnAddToBasket.Location = new System.Drawing.Point(212, 570);
             this.btnAddToBasket.Name = "btnAddToBasket";
             this.btnAddToBasket.Size = new System.Drawing.Size(459, 79);
             this.btnAddToBasket.TabIndex = 8;
@@ -335,6 +338,17 @@
             this.Basket.Name = "Basket";
             this.Basket.Size = new System.Drawing.Size(516, 537);
             this.Basket.TabIndex = 9;
+            this.Basket.Paint += new System.Windows.Forms.PaintEventHandler(this.Basket_Paint);
+            // 
+            // metroLabel7
+            // 
+            this.metroLabel7.AutoSize = true;
+            this.metroLabel7.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.metroLabel7.Location = new System.Drawing.Point(18, 42);
+            this.metroLabel7.Name = "metroLabel7";
+            this.metroLabel7.Size = new System.Drawing.Size(80, 19);
+            this.metroLabel7.TabIndex = 12;
+            this.metroLabel7.Text = "Your Order:";
             // 
             // dataGridView1
             // 
@@ -351,6 +365,21 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(486, 352);
             this.dataGridView1.TabIndex = 11;
+            // 
+            // colItemName
+            // 
+            this.colItemName.HeaderText = "Item Name";
+            this.colItemName.Name = "colItemName";
+            // 
+            // colItemQuantity
+            // 
+            this.colItemQuantity.HeaderText = "Quantity";
+            this.colItemQuantity.Name = "colItemQuantity";
+            // 
+            // colLinePrice
+            // 
+            this.colLinePrice.HeaderText = "Price";
+            this.colLinePrice.Name = "colLinePrice";
             // 
             // btnCaptureSale
             // 
@@ -387,7 +416,7 @@
             this.txtQuantityPurchased.CustomButton.UseSelectable = true;
             this.txtQuantityPurchased.CustomButton.Visible = false;
             this.txtQuantityPurchased.Lines = new string[0];
-            this.txtQuantityPurchased.Location = new System.Drawing.Point(221, 512);
+            this.txtQuantityPurchased.Location = new System.Drawing.Point(212, 541);
             this.txtQuantityPurchased.MaxLength = 32767;
             this.txtQuantityPurchased.Name = "txtQuantityPurchased";
             this.txtQuantityPurchased.PasswordChar = '\0';
@@ -404,36 +433,32 @@
             this.txtQuantityPurchased.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtQuantityPurchased.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
-            // colItemName
+            // cbxCustomerName
             // 
-            this.colItemName.HeaderText = "Item Name";
-            this.colItemName.Name = "colItemName";
+            this.cbxCustomerName.FormattingEnabled = true;
+            this.cbxCustomerName.ItemHeight = 23;
+            this.cbxCustomerName.Location = new System.Drawing.Point(212, 506);
+            this.cbxCustomerName.Name = "cbxCustomerName";
+            this.cbxCustomerName.Size = new System.Drawing.Size(459, 29);
+            this.cbxCustomerName.TabIndex = 11;
+            this.cbxCustomerName.UseSelectable = true;
             // 
-            // colItemQuantity
+            // metroLabel8
             // 
-            this.colItemQuantity.HeaderText = "Quantity";
-            this.colItemQuantity.Name = "colItemQuantity";
-            // 
-            // colLinePrice
-            // 
-            this.colLinePrice.HeaderText = "Price";
-            this.colLinePrice.Name = "colLinePrice";
-            // 
-            // metroLabel7
-            // 
-            this.metroLabel7.AutoSize = true;
-            this.metroLabel7.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel7.Location = new System.Drawing.Point(18, 42);
-            this.metroLabel7.Name = "metroLabel7";
-            this.metroLabel7.Size = new System.Drawing.Size(80, 19);
-            this.metroLabel7.TabIndex = 12;
-            this.metroLabel7.Text = "Your Order:";
+            this.metroLabel8.AutoSize = true;
+            this.metroLabel8.Location = new System.Drawing.Point(212, 484);
+            this.metroLabel8.Name = "metroLabel8";
+            this.metroLabel8.Size = new System.Drawing.Size(109, 19);
+            this.metroLabel8.TabIndex = 12;
+            this.metroLabel8.Text = "Customer Name:";
             // 
             // Make_a_New_Sale
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1215, 653);
+            this.Controls.Add(this.metroLabel8);
+            this.Controls.Add(this.cbxCustomerName);
             this.Controls.Add(this.txtQuantityPurchased);
             this.Controls.Add(this.Basket);
             this.Controls.Add(this.btnAddToBasket);
@@ -442,6 +467,7 @@
             this.Controls.Add(this.txtFilter);
             this.Controls.Add(this.listBox1);
             this.Name = "Make_a_New_Sale";
+            this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Orange;
             this.Text = "Make a New Sale";
             this.Load += new System.EventHandler(this.Make_a_New_Sale_Load);
@@ -484,5 +510,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn colItemQuantity;
         private System.Windows.Forms.DataGridViewTextBoxColumn colLinePrice;
         private MetroFramework.Controls.MetroLabel metroLabel7;
+        private MetroFramework.Controls.MetroComboBox cbxCustomerName;
+        private MetroFramework.Controls.MetroLabel metroLabel8;
     }
 }

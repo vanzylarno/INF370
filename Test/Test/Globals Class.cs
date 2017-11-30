@@ -13,6 +13,8 @@ namespace Test
         public static int adminNumber;
         public static string UserName;
         public  static int UserID;
+        public static int isLoyaltyMember = 1;
+        public static double loyaltyPointsPercentage = 0.25;
 
         public static int IsAdmin
         {

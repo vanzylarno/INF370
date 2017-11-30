@@ -212,3 +212,11 @@ F:\GitHub\INF370\Test\Test\obj\Debug\Test.Update_a_User.resources
 F:\GitHub\INF370\Test\Test\obj\Debug\Test.Sales_Form.resources
 F:\GitHub\INF370\Test\Test\obj\Debug\Test.Make_a_New_Sale.resources
 F:\GitHub\INF370\Test\Test\obj\Debug\Test.Refund_Sale.resources
+F:\GitHub\INF370\Test\Test\obj\Debug\Test.Add_New_Customer.resources
+F:\GitHub\INF370\Test\Test\obj\Debug\Test.Customer_s_Form.resources
+F:\GitHub\INF370\Test\Test\obj\Debug\Test.Find_a_Customer.resources
+F:\GitHub\INF370\Test\Test\obj\Debug\Test.Update_Customer.resources
+F:\GitHub\INF370\Test\Test\obj\Debug\Test.Delete_a_Customer.resources
+F:\GitHub\INF370\Test\Test\obj\Debug\Test.Loyalty_Program.resources
+F:\GitHub\INF370\Test\Test\obj\Debug\Test.View_Points_Available.resources
+F:\GitHub\INF370\Test\Test\obj\Debug\Test.Use_Loyalty_Points.resources

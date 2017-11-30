@@ -14,10 +14,15 @@ namespace Test
 {
     public partial class Refund_Sale : MetroFramework.Forms.MetroForm
     {
+
+
         public Refund_Sale()
         {
             InitializeComponent();
         }
+        int isMember;
+        string SelectedCustomer;
+        decimal CurrentPoints;
 
         private void Refund_Sale_Load(object sender, EventArgs e)
         {
@@ -42,6 +47,21 @@ namespace Test
             }
             Dr.Close();
             sqlcon1.Close();
+
+            //Add Customers
+            SqlConnection sqlcon2 = new SqlConnection(Globals_Class.ConnectionString);
+            sqlcon2.Open();
+            string Select2 = "SELECT CustomerFullName FROM Customers";
+            SqlCommand sqlcom2 = new SqlCommand(Select2, sqlcon2);
+            SqlDataReader dr2;
+            dr2 = sqlcom2.ExecuteReader();
+            if (dr2.HasRows)
+            {
+                while (dr2.Read())
+                {
+                    cbxCustomerName.Items.Add((dr2["CustomerFullName"].ToString()));
+                }
+            }
         }
 
         private void txtFilter_TextChanged(object sender, EventArgs e)
@@ -176,7 +196,105 @@ namespace Test
                     sqlcon3.Close();
 
                     MetroFramework.MetroMessageBox.Show(this, "The Sale has been Successfully Refunded!", "Message", MessageBoxButtons.OK, MessageBoxIcon.None);
-               }
+
+                    //Deduct Points
+                    //Get Membership Status
+                    SelectedCustomer = cbxCustomerName.Text;
+                    try
+                    {
+
+                        SqlConnection sqlcon5 = new SqlConnection(Globals_Class.ConnectionString);
+                        sqlcon5.Open();
+                        string GetMembership = "SELECT isMember From Customers Where CustomerFullName ='" + SelectedCustomer.ToString() + "'";
+                        SqlCommand sqlcom5 = new SqlCommand(GetMembership, sqlcon5);
+                        SqlDataReader dr5;
+                        dr5 = sqlcom5.ExecuteReader();
+                        if (dr5.HasRows)
+                        {
+                            while (dr5.Read())
+                            {
+                                isMember = Convert.ToInt32((dr5["isMember"]));
+                                if (isMember == 1)
+                                {
+                                    try
+                                    {
+                                        SqlConnection sqlcon6 = new SqlConnection(Globals_Class.ConnectionString);
+                                        sqlcon6.Open();
+                                        string GetPoints = "SELECT LoyaltyPointsAvailable FROM Customers WHERE CustomerFullName ='" + SelectedCustomer.ToString() + "'";
+                                        SqlCommand sqlcom6 = new SqlCommand(GetPoints, sqlcon6);
+                                        SqlDataReader dr;
+                                        dr = sqlcom6.ExecuteReader();
+                                        if (dr.HasRows)
+                                        {
+                                            while (dr.Read())
+                                            {
+                                                CurrentPoints = Convert.ToDecimal((dr["LoyaltyPointsAvailable"]));
+                                                decimal Cost = Convert.ToDecimal(txtCostOfSale.Text);
+                                                decimal PointsReceived;
+                                                decimal FinalPoints;
+                                                PointsReceived = Cost * Convert.ToDecimal(Globals_Class.loyaltyPointsPercentage);
+                                                FinalPoints = CurrentPoints - PointsReceived;
+
+                                                //Add Points
+                                                SqlConnection sqlcon9 = new SqlConnection(Globals_Class.ConnectionString);
+                                                sqlcon9.Open();
+                                                string UpdatePoints = "UPDATE Customers SET LoyaltyPointsAvailable ='" + FinalPoints.ToString() + "' WHERE CustomerFullName ='" + SelectedCustomer.ToString() + "'";
+                                                SqlCommand sqlcom9 = new SqlCommand(UpdatePoints, sqlcon9);
+                                                sqlcom9.ExecuteNonQuery();
+                                                sqlcon9.Close();
+                                            }
+                                        }
+                                        dr.Close();
+                                        sqlcon6.Close();
+
+                                    }
+                                    catch
+                                    {
+
+                                    }
+
+                                }
+                                else
+                                {
+
+                                }
+                            }
+                        }
+                        dr5.Close();
+                        sqlcon5.Close();
+
+                    }
+                    catch
+                    {
+                        isMember = 0;
+                    }
+                    //Get Current Points
+                    
+
+
+
+               
+                    cbxCustomerName.Text = "";
+                    cbxCustomerName.Items.Clear();
+
+                    //Add Customers
+                    SqlConnection sqlcon7 = new SqlConnection(Globals_Class.ConnectionString);
+                    sqlcon7.Open();
+                    string Select7 = "SELECT CustomerFullName FROM Customers";
+                    SqlCommand sqlcom7 = new SqlCommand(Select7, sqlcon7);
+                    SqlDataReader dr2;
+                    dr2 = sqlcom7.ExecuteReader();
+                    if (dr2.HasRows)
+                    {
+                        while (dr2.Read())
+                        {
+                            cbxCustomerName.Items.Add((dr2["CustomerFullName"].ToString()));
+                        }
+                    }
+
+
+
+                }
                 catch
                 {
                     MetroFramework.MetroMessageBox.Show(this, "An Error Occurred Whislt Connecting to the Database!", "Message", MessageBoxButtons.OK, MessageBoxIcon.None);
