@@ -68,6 +68,7 @@ namespace Test
         int QPurchased;
         int QLeft;
         int ProductID;
+        int SelectedCustomerID;
 
 
         private void Membership()
@@ -403,7 +404,7 @@ namespace Test
 
                 SqlConnection sqlcon77 = new SqlConnection(Globals_Class.ConnectionString);
                 sqlcon77.Open();
-                string GetPoints = "SELECT LoyaltyPointsAvailable FROM Customers WHERE CustomerFullName ='" + listBox1.Text.ToString() + "'";
+                string GetPoints = "SELECT LoyaltyPointsAvailable FROM Customers WHERE CustomerID ='" + CustomerID.ToString() + "'";
                 SqlCommand sqlcom77 = new SqlCommand(GetPoints, sqlcon77);
                 SqlDataReader dr77;
                 dr77 = sqlcom77.ExecuteReader();
@@ -424,7 +425,7 @@ namespace Test
                                 //set points to zero
                                 SqlConnection sqlcon222 = new SqlConnection(Globals_Class.ConnectionString);
                                 sqlcon222.Open();
-                                string SetToZero = "UPDATE Customers SET LoyaltyPointsAvailable ='" + zero.ToString() + "' WHERE CustomerFullName ='" + SelectedCustomer.ToString() + "'";
+                                string SetToZero = "UPDATE Customers SET LoyaltyPointsAvailable ='" + zero.ToString() + "' WHERE CustomerID ='" + CustomerID.ToString() + "'";
                                 SqlCommand sqlcom222 = new SqlCommand(SetToZero, sqlcon222);
                                 sqlcom222.ExecuteNonQuery();
                                 sqlcon222.Close();
@@ -435,7 +436,7 @@ namespace Test
                                 pointspoints = LoyaltyPointsAvailable - sum1;
                                 SqlConnection sqlcon33 = new SqlConnection(Globals_Class.ConnectionString);
                                 sqlcon33.Open();
-                                string Calculate = "Update Customers SET LoyaltyPointsAvailable ='" + pointspoints.ToString() + "' WHERE CustomerFullName ='" + SelectedCustomer.ToString() + "'";
+                                string Calculate = "Update Customers SET LoyaltyPointsAvailable ='" + pointspoints.ToString() + "' WHERE CustomerID ='" + CustomerID.ToString() + "'";
                                 SqlCommand sqlcom33 = new SqlCommand(Calculate, sqlcon33);
                                 sqlcom33.ExecuteNonQuery();
                                 sqlcon33.Close();
@@ -451,7 +452,7 @@ namespace Test
                                 //set points to zero
                                 SqlConnection sqlcon22 = new SqlConnection(Globals_Class.ConnectionString);
                                 sqlcon22.Open();
-                                string SetToZero = "UPDATE Customers SET LoyaltyPointsAvailable ='" + zero.ToString() + "' WHERE CustomerFullName ='" + SelectedCustomer.ToString() + "'";
+                                string SetToZero = "UPDATE Customers SET LoyaltyPointsAvailable ='" + zero.ToString() + "' WHERE CustomerID ='" + CustomerID.ToString() + "'";
                                 SqlCommand sqlcom22 = new SqlCommand(SetToZero, sqlcon22);
                                 sqlcom22.ExecuteNonQuery();
                                 sqlcon22.Close();
@@ -462,7 +463,7 @@ namespace Test
                                 pointspoints = LoyaltyPointsAvailable - sum1;
                                 SqlConnection sqlcon33 = new SqlConnection(Globals_Class.ConnectionString);
                                 sqlcon33.Open();
-                                string Calculate = "Update Customers SET LoyaltyPointsAvailable ='" + pointspoints.ToString() + "' WHERE CustomerFullName ='" + SelectedCustomer.ToString() + "'";
+                                string Calculate = "Update Customers SET LoyaltyPointsAvailable ='" + pointspoints.ToString() + "' WHERE CustomerID ='" + CustomerID.ToString() + "'";
                                 SqlCommand sqlcom33 = new SqlCommand(Calculate, sqlcon33);
                                 sqlcom33.ExecuteNonQuery();
                                 sqlcon33.Close();

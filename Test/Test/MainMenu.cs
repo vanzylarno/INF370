@@ -83,5 +83,11 @@ namespace Test
             Customer_s_Form myform = new Customer_s_Form();
             myform.ShowDialog();
         }
+
+        private void metroTile4_Click(object sender, EventArgs e)
+        {
+            Events_Form myform = new Events_Form();
+            myform.ShowDialog();
+        }
     }
 }

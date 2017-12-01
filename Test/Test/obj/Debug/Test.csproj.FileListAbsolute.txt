@@ -220,3 +220,12 @@ F:\GitHub\INF370\Test\Test\obj\Debug\Test.Delete_a_Customer.resources
 F:\GitHub\INF370\Test\Test\obj\Debug\Test.Loyalty_Program.resources
 F:\GitHub\INF370\Test\Test\obj\Debug\Test.View_Points_Available.resources
 F:\GitHub\INF370\Test\Test\obj\Debug\Test.Use_Loyalty_Points.resources
+F:\GitHub\INF370\Test\Test\obj\Debug\Test.Add_Wine_Tasting.resources
+F:\GitHub\INF370\Test\Test\obj\Debug\Test.Events_Form.resources
+F:\GitHub\INF370\Test\Test\obj\Debug\Test.Vineyard_Tours_Form.resources
+F:\GitHub\INF370\Test\Test\obj\Debug\Test.Wine_Tasting_Form.resources
+F:\GitHub\INF370\Test\Test\obj\Debug\Test.WineTasting_Help_Page.resources
+F:\GitHub\INF370\Test\Test\obj\Debug\Test.Update_a_Wine_Tasting.resources
+F:\GitHub\INF370\Test\Test\obj\Debug\Test.Delete_a_Wine_Tasting.resources
+F:\GitHub\INF370\Test\Test\obj\Debug\Test.Find_Wine_Tasting.resources
+F:\GitHub\INF370\Test\Test\obj\Debug\Test.Wine_Tastings_Booked.resources

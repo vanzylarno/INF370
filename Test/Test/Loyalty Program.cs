@@ -17,6 +17,7 @@ namespace Test
         {
             InitializeComponent();
         }
+        int SelectedCustomerID;
 
         private void Loyalty_Program_Load(object sender, EventArgs e)
         {

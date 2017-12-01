@@ -103,6 +103,16 @@ namespace Test.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Booked {
+            get {
+                object obj = ResourceManager.GetObject("Booked", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Calculator {
             get {
                 object obj = ResourceManager.GetObject("Calculator", resourceCulture);
@@ -136,6 +146,16 @@ namespace Test.Properties {
         internal static System.Drawing.Bitmap Email {
             get {
                 object obj = ResourceManager.GetObject("Email", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Events {
+            get {
+                object obj = ResourceManager.GetObject("Events", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -443,6 +463,16 @@ namespace Test.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Tour {
+            get {
+                object obj = ResourceManager.GetObject("Tour", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Update {
             get {
                 object obj = ResourceManager.GetObject("Update", resourceCulture);
@@ -546,6 +576,16 @@ namespace Test.Properties {
         internal static System.Drawing.Bitmap Userpassword1 {
             get {
                 object obj = ResourceManager.GetObject("Userpassword1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Wine {
+            get {
+                object obj = ResourceManager.GetObject("Wine", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

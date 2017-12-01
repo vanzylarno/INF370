@@ -172,6 +172,12 @@
     <Compile Include="Add Supplier Form.Designer.cs">
       <DependentUpon>Add Supplier Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="Add Wine Tasting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Wine Tasting.Designer.cs">
+      <DependentUpon>Add Wine Tasting.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin Features.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -239,6 +245,18 @@
     <Compile Include="Delete a User.Designer.cs">
       <DependentUpon>Delete a User.cs</DependentUpon>
     </Compile>
+    <Compile Include="Delete a Wine Tasting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete a Wine Tasting.Designer.cs">
+      <DependentUpon>Delete a Wine Tasting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Events Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Events Form.Designer.cs">
+      <DependentUpon>Events Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Find a Customer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -274,6 +292,12 @@
     </Compile>
     <Compile Include="Find Inventory Product.Designer.cs">
       <DependentUpon>Find Inventory Product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Find Wine Tasting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Find Wine Tasting.Designer.cs">
+      <DependentUpon>Find Wine Tasting.cs</DependentUpon>
     </Compile>
     <Compile Include="Help Form.cs">
       <SubType>Form</SubType>
@@ -397,6 +421,12 @@
     <Compile Include="Update a User.Designer.cs">
       <DependentUpon>Update a User.cs</DependentUpon>
     </Compile>
+    <Compile Include="Update a Wine Tasting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update a Wine Tasting.Designer.cs">
+      <DependentUpon>Update a Wine Tasting.cs</DependentUpon>
+    </Compile>
     <Compile Include="Update Account Information Form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -427,6 +457,30 @@
     <Compile Include="View Points Available.Designer.cs">
       <DependentUpon>View Points Available.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vineyard Tours Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vineyard Tours Form.Designer.cs">
+      <DependentUpon>Vineyard Tours Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wine Tasting Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wine Tasting Form.Designer.cs">
+      <DependentUpon>Wine Tasting Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wine Tastings Booked.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wine Tastings Booked.Designer.cs">
+      <DependentUpon>Wine Tastings Booked.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WineTasting Help Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WineTasting Help Page.Designer.cs">
+      <DependentUpon>WineTasting Help Page.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Account Settings Form.resx">
       <DependentUpon>Account Settings Form.cs</DependentUpon>
     </EmbeddedResource>
@@ -441,6 +495,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Add Supplier Form.resx">
       <DependentUpon>Add Supplier Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add Wine Tasting.resx">
+      <DependentUpon>Add Wine Tasting.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin Features.resx">
       <DependentUpon>Admin Features.cs</DependentUpon>
@@ -475,6 +532,12 @@
     <EmbeddedResource Include="Delete a User.resx">
       <DependentUpon>Delete a User.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Delete a Wine Tasting.resx">
+      <DependentUpon>Delete a Wine Tasting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Events Form.resx">
+      <DependentUpon>Events Form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Find a Customer.resx">
       <DependentUpon>Find a Customer.cs</DependentUpon>
     </EmbeddedResource>
@@ -492,6 +555,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Find Inventory Product.resx">
       <DependentUpon>Find Inventory Product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Find Wine Tasting.resx">
+      <DependentUpon>Find Wine Tasting.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Help Form.resx">
       <DependentUpon>Help Form.cs</DependentUpon>
@@ -543,6 +609,9 @@
     <EmbeddedResource Include="Update a User.resx">
       <DependentUpon>Update a User.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Update a Wine Tasting.resx">
+      <DependentUpon>Update a Wine Tasting.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Update Account Information Form.resx">
       <DependentUpon>Update Account Information Form.cs</DependentUpon>
     </EmbeddedResource>
@@ -557,6 +626,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View Points Available.resx">
       <DependentUpon>View Points Available.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vineyard Tours Form.resx">
+      <DependentUpon>Vineyard Tours Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wine Tasting Form.resx">
+      <DependentUpon>Wine Tasting Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wine Tastings Booked.resx">
+      <DependentUpon>Wine Tastings Booked.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WineTasting Help Page.resx">
+      <DependentUpon>WineTasting Help Page.cs</DependentUpon>
     </EmbeddedResource>
     <EntityDeploy Include="Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
@@ -627,6 +708,10 @@
     <None Include="bin\Images\Loyalty Points.png" />
     <None Include="bin\Images\Loyalty Program.png" />
     <None Include="bin\Images\Use Loyalty Points.png" />
+    <None Include="bin\Images\Events.png" />
+    <None Include="bin\Images\Wine.png" />
+    <None Include="bin\Images\Tour.png" />
+    <None Include="bin\Images\Booked.png" />
     <Content Include="Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Model1.Context.cs</LastGenOutput>
