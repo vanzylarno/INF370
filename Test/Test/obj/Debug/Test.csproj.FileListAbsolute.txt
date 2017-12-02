@@ -229,3 +229,15 @@ F:\GitHub\INF370\Test\Test\obj\Debug\Test.Update_a_Wine_Tasting.resources
 F:\GitHub\INF370\Test\Test\obj\Debug\Test.Delete_a_Wine_Tasting.resources
 F:\GitHub\INF370\Test\Test\obj\Debug\Test.Find_Wine_Tasting.resources
 F:\GitHub\INF370\Test\Test\obj\Debug\Test.Wine_Tastings_Booked.resources
+F:\GitHub\INF370\Test\Test\obj\Debug\Test.Add_VineyardTour.resources
+F:\GitHub\INF370\Test\Test\obj\Debug\Test.Delete_VineyardTour.resources
+F:\GitHub\INF370\Test\Test\obj\Debug\Test.Find_a_VineyardTour.resources
+F:\GitHub\INF370\Test\Test\obj\Debug\Test.Update_a_VineyardTour.resources
+F:\GitHub\INF370\Test\Test\obj\Debug\Test.VineyardTours_Booked.resources
+F:\GitHub\INF370\Test\Test\obj\Debug\Test.Add_Employee.resources
+F:\GitHub\INF370\Test\Test\obj\Debug\Test.Employees_Form.resources
+F:\GitHub\INF370\Test\Test\obj\Debug\Test.Add_Employee_Type.resources
+F:\GitHub\INF370\Test\Test\obj\Debug\Test.Find_Employee.resources
+F:\GitHub\INF370\Test\Test\obj\Debug\Test.Delete_a_Employee.resources
+F:\GitHub\INF370\Test\Test\obj\Debug\Test.Update_an_Employee.resources
+F:\GitHub\INF370\Test\Test\obj\Debug\Test.Leave_Form.resources

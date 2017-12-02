@@ -21,5 +21,35 @@ namespace Test
         {
 
         }
+
+        private void DeleteSupplier_Click(object sender, EventArgs e)
+        {
+            Delete_VineyardTour myform = new Delete_VineyardTour();
+            myform.ShowDialog();
+        }
+
+        private void AddSupplier_Click(object sender, EventArgs e)
+        {
+            Add_VineyardTour myform = new Add_VineyardTour();
+            myform.ShowDialog();
+        }
+
+        private void UpdateSupplier_Click(object sender, EventArgs e)
+        {
+            Update_a_VineyardTour myform = new Update_a_VineyardTour();
+            myform.ShowDialog();
+        }
+
+        private void FindSupplier_Click(object sender, EventArgs e)
+        {
+            Find_a_VineyardTour myform = new Find_a_VineyardTour();
+            myform.ShowDialog();
+        }
+
+        private void metroTile1_Click(object sender, EventArgs e)
+        {
+            VineyardTours_Booked myform = new VineyardTours_Booked();
+            myform.ShowDialog();
+        }
     }
 }

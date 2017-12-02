@@ -50,6 +50,7 @@
             this.metroTile1.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
             this.metroTile1.UseSelectable = true;
             this.metroTile1.UseTileImage = true;
+            this.metroTile1.Click += new System.EventHandler(this.metroTile1_Click);
             // 
             // FindSupplier
             // 
@@ -66,6 +67,7 @@
             this.FindSupplier.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
             this.FindSupplier.UseSelectable = true;
             this.FindSupplier.UseTileImage = true;
+            this.FindSupplier.Click += new System.EventHandler(this.FindSupplier_Click);
             // 
             // UpdateSupplier
             // 
@@ -82,6 +84,7 @@
             this.UpdateSupplier.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
             this.UpdateSupplier.UseSelectable = true;
             this.UpdateSupplier.UseTileImage = true;
+            this.UpdateSupplier.Click += new System.EventHandler(this.UpdateSupplier_Click);
             // 
             // DeleteSupplier
             // 
@@ -98,6 +101,7 @@
             this.DeleteSupplier.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
             this.DeleteSupplier.UseSelectable = true;
             this.DeleteSupplier.UseTileImage = true;
+            this.DeleteSupplier.Click += new System.EventHandler(this.DeleteSupplier_Click);
             // 
             // AddSupplier
             // 
@@ -114,6 +118,7 @@
             this.AddSupplier.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
             this.AddSupplier.UseSelectable = true;
             this.AddSupplier.UseTileImage = true;
+            this.AddSupplier.Click += new System.EventHandler(this.AddSupplier_Click);
             // 
             // Vineyard_Tours_Form
             // 

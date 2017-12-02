@@ -33,6 +33,7 @@
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.btnAdminFeatures = new MetroFramework.Controls.MetroButton();
+            this.mtEmployees = new MetroFramework.Controls.MetroTile();
             this.metroTile4 = new MetroFramework.Controls.MetroTile();
             this.metroTile3 = new MetroFramework.Controls.MetroTile();
             this.metroTile2 = new MetroFramework.Controls.MetroTile();
@@ -102,6 +103,23 @@
             this.btnAdminFeatures.UseSelectable = true;
             this.btnAdminFeatures.Click += new System.EventHandler(this.btnAdminFeatures_Click);
             // 
+            // mtEmployees
+            // 
+            this.mtEmployees.ActiveControl = null;
+            this.mtEmployees.Location = new System.Drawing.Point(1603, 499);
+            this.mtEmployees.Name = "mtEmployees";
+            this.mtEmployees.Size = new System.Drawing.Size(251, 195);
+            this.mtEmployees.Style = MetroFramework.MetroColorStyle.Orange;
+            this.mtEmployees.TabIndex = 19;
+            this.mtEmployees.Text = "Employees";
+            this.mtEmployees.TileImage = global::Test.Properties.Resources.Employeesz;
+            this.mtEmployees.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.mtEmployees.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
+            this.mtEmployees.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
+            this.mtEmployees.UseSelectable = true;
+            this.mtEmployees.UseTileImage = true;
+            this.mtEmployees.Click += new System.EventHandler(this.mtEmployees_Click);
+            // 
             // metroTile4
             // 
             this.metroTile4.ActiveControl = null;
@@ -156,7 +174,7 @@
             // metroTile1
             // 
             this.metroTile1.ActiveControl = null;
-            this.metroTile1.Location = new System.Drawing.Point(1097, 91);
+            this.metroTile1.Location = new System.Drawing.Point(1603, 90);
             this.metroTile1.Name = "metroTile1";
             this.metroTile1.Size = new System.Drawing.Size(251, 195);
             this.metroTile1.Style = MetroFramework.MetroColorStyle.Orange;
@@ -190,7 +208,7 @@
             // mtSettings
             // 
             this.mtSettings.ActiveControl = null;
-            this.mtSettings.Location = new System.Drawing.Point(1097, 292);
+            this.mtSettings.Location = new System.Drawing.Point(1603, 291);
             this.mtSettings.Name = "mtSettings";
             this.mtSettings.Size = new System.Drawing.Size(251, 202);
             this.mtSettings.Style = MetroFramework.MetroColorStyle.Orange;
@@ -208,7 +226,7 @@
             // mtLogout
             // 
             this.mtLogout.ActiveControl = null;
-            this.mtLogout.Location = new System.Drawing.Point(1097, 500);
+            this.mtLogout.Location = new System.Drawing.Point(1603, 818);
             this.mtLogout.Name = "mtLogout";
             this.mtLogout.Size = new System.Drawing.Size(251, 174);
             this.mtLogout.Style = MetroFramework.MetroColorStyle.Orange;
@@ -244,7 +262,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1371, 711);
+            this.ClientSize = new System.Drawing.Size(1940, 1100);
+            this.Controls.Add(this.mtEmployees);
             this.Controls.Add(this.metroTile4);
             this.Controls.Add(this.metroTile3);
             this.Controls.Add(this.metroTile2);
@@ -264,6 +283,7 @@
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Style = MetroFramework.MetroColorStyle.Orange;
             this.Text = "Main Menu";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.MainMenu_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -284,5 +304,6 @@
         private MetroFramework.Controls.MetroTile metroTile2;
         private MetroFramework.Controls.MetroTile metroTile3;
         private MetroFramework.Controls.MetroTile metroTile4;
+        private MetroFramework.Controls.MetroTile mtEmployees;
     }
 }

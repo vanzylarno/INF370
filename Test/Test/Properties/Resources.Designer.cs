@@ -153,6 +153,26 @@ namespace Test.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Employees {
+            get {
+                object obj = ResourceManager.GetObject("Employees", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Employeesz {
+            get {
+                object obj = ResourceManager.GetObject("Employeesz", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Events {
             get {
                 object obj = ResourceManager.GetObject("Events", resourceCulture);
@@ -246,6 +266,26 @@ namespace Test.Properties {
         internal static System.Drawing.Bitmap if_Lock_1214985 {
             get {
                 object obj = ResourceManager.GetObject("if_Lock_1214985", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap if_money_bag_309025 {
+            get {
+                object obj = ResourceManager.GetObject("if_money_bag_309025", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap if_Palm_130244 {
+            get {
+                object obj = ResourceManager.GetObject("if_Palm_130244", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
