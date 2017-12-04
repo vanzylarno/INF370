@@ -214,6 +214,12 @@
     <Compile Include="CaptureNewSupplierOrder.Designer.cs">
       <DependentUpon>CaptureNewSupplierOrder.cs</DependentUpon>
     </Compile>
+    <Compile Include="Check Connection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Check Connection.Designer.cs">
+      <DependentUpon>Check Connection.cs</DependentUpon>
+    </Compile>
     <Compile Include="Class1.cs" />
     <Compile Include="Create a New Password Form.cs">
       <SubType>Form</SubType>
@@ -221,6 +227,7 @@
     <Compile Include="Create a New Password Form.Designer.cs">
       <DependentUpon>Create a New Password Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="Create Database.cs" />
     <Compile Include="Create New Account Form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -434,6 +441,12 @@
     <Compile Include="Refund Sale.Designer.cs">
       <DependentUpon>Refund Sale.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reports Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports Form.Designer.cs">
+      <DependentUpon>Reports Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Restore Database Form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -595,6 +608,9 @@
     <EmbeddedResource Include="CaptureNewSupplierOrder.resx">
       <DependentUpon>CaptureNewSupplierOrder.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Check Connection.resx">
+      <DependentUpon>Check Connection.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Create a New Password Form.resx">
       <DependentUpon>Create a New Password Form.cs</DependentUpon>
     </EmbeddedResource>
@@ -695,6 +711,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Refund Sale.resx">
       <DependentUpon>Refund Sale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports Form.resx">
+      <DependentUpon>Reports Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Restore Database Form.resx">
       <DependentUpon>Restore Database Form.cs</DependentUpon>
@@ -834,6 +853,9 @@
     <None Include="bin\Images\if_Palm_130244.png" />
     <None Include="bin\Images\if_money_bag_309025.png" />
     <None Include="bin\Images\if_8_2135932.png" />
+    <None Include="bin\Images\if_graph_298791.png" />
+    <None Include="bin\Images\if_radio-tower_298855.png" />
+    <None Include="bin\Images\if_globe_172473.png" />
     <Content Include="Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Model1.Context.cs</LastGenOutput>

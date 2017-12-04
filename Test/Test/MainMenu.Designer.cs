@@ -31,6 +31,20 @@
             this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.lblUserName = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblDate = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lblTime = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.lblDay = new System.Windows.Forms.Label();
+            this.lbblDetails = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.lblHelp = new MetroFramework.Controls.MetroLabel();
+            this.metroTile6 = new MetroFramework.Controls.MetroTile();
+            this.metroTile5 = new MetroFramework.Controls.MetroTile();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.mtAdmin = new MetroFramework.Controls.MetroTile();
             this.mtEmployees = new MetroFramework.Controls.MetroTile();
             this.metroTile4 = new MetroFramework.Controls.MetroTile();
@@ -41,21 +55,9 @@
             this.mtSettings = new MetroFramework.Controls.MetroTile();
             this.mtLogout = new MetroFramework.Controls.MetroTile();
             this.mtSuppliers = new MetroFramework.Controls.MetroTile();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lblDate = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.lblTime = new System.Windows.Forms.Label();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.lblDay = new System.Windows.Forms.Label();
-            this.lbblDetails = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.lblHelp = new MetroFramework.Controls.MetroLabel();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -79,6 +81,171 @@
             this.lblUserName.Size = new System.Drawing.Size(74, 16);
             this.lblUserName.TabIndex = 4;
             this.lblUserName.Text = "UserName";
+            // 
+            // panel1
+            // 
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.lblDay);
+            this.panel1.Controls.Add(this.lblTime);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.lblDate);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.lblUserName);
+            this.panel1.Location = new System.Drawing.Point(1435, 90);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(431, 153);
+            this.panel1.TabIndex = 21;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // metroLabel3
+            // 
+            this.metroLabel3.AutoSize = true;
+            this.metroLabel3.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel3.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.metroLabel3.Location = new System.Drawing.Point(1435, 62);
+            this.metroLabel3.Name = "metroLabel3";
+            this.metroLabel3.Size = new System.Drawing.Size(90, 25);
+            this.metroLabel3.TabIndex = 0;
+            this.metroLabel3.Text = "Welcome!";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label2.Location = new System.Drawing.Point(3, 45);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(40, 16);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Date:";
+            // 
+            // lblDate
+            // 
+            this.lblDate.AutoSize = true;
+            this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDate.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblDate.Location = new System.Drawing.Point(134, 45);
+            this.lblDate.Name = "lblDate";
+            this.lblDate.Size = new System.Drawing.Size(79, 16);
+            this.lblDate.TabIndex = 6;
+            this.lblDate.Text = "CurrentDate";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label3.Location = new System.Drawing.Point(3, 76);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(42, 16);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Time:";
+            // 
+            // lblTime
+            // 
+            this.lblTime.AutoSize = true;
+            this.lblTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTime.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblTime.Location = new System.Drawing.Point(47, 76);
+            this.lblTime.Name = "lblTime";
+            this.lblTime.Size = new System.Drawing.Size(42, 16);
+            this.lblTime.TabIndex = 9;
+            this.lblTime.Text = "Time:";
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 10;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // lblDay
+            // 
+            this.lblDay.AutoSize = true;
+            this.lblDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDay.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblDay.Location = new System.Drawing.Point(49, 45);
+            this.lblDay.Name = "lblDay";
+            this.lblDay.Size = new System.Drawing.Size(79, 16);
+            this.lblDay.TabIndex = 10;
+            this.lblDay.Text = "CurrentDate";
+            // 
+            // lbblDetails
+            // 
+            this.lbblDetails.AutoSize = true;
+            this.lbblDetails.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbblDetails.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbblDetails.Location = new System.Drawing.Point(4, 42);
+            this.lbblDetails.Name = "lbblDetails";
+            this.lbblDetails.Size = new System.Drawing.Size(50, 16);
+            this.lbblDetails.TabIndex = 22;
+            this.lbblDetails.Text = "Details";
+            this.lbblDetails.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.lblHelp);
+            this.panel2.Controls.Add(this.lbblDetails);
+            this.panel2.Location = new System.Drawing.Point(1435, 250);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(431, 178);
+            this.panel2.TabIndex = 23;
+            // 
+            // lblHelp
+            // 
+            this.lblHelp.AutoSize = true;
+            this.lblHelp.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.lblHelp.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.lblHelp.Location = new System.Drawing.Point(7, 10);
+            this.lblHelp.Name = "lblHelp";
+            this.lblHelp.Size = new System.Drawing.Size(54, 25);
+            this.lblHelp.TabIndex = 24;
+            this.lblHelp.Text = "Help!";
+            // 
+            // metroTile6
+            // 
+            this.metroTile6.ActiveControl = null;
+            this.metroTile6.Location = new System.Drawing.Point(1051, 818);
+            this.metroTile6.Name = "metroTile6";
+            this.metroTile6.Size = new System.Drawing.Size(251, 195);
+            this.metroTile6.Style = MetroFramework.MetroColorStyle.Orange;
+            this.metroTile6.TabIndex = 25;
+            this.metroTile6.Text = "Check Connection";
+            this.metroTile6.TileImage = global::Test.Properties.Resources.if_radio_tower_298855;
+            this.metroTile6.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroTile6.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
+            this.metroTile6.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
+            this.metroTile6.UseSelectable = true;
+            this.metroTile6.UseTileImage = true;
+            this.metroTile6.Click += new System.EventHandler(this.metroTile6_Click);
+            this.metroTile6.MouseHover += new System.EventHandler(this.metroTile6_MouseHover);
+            // 
+            // metroTile5
+            // 
+            this.metroTile5.ActiveControl = null;
+            this.metroTile5.Location = new System.Drawing.Point(794, 818);
+            this.metroTile5.Name = "metroTile5";
+            this.metroTile5.Size = new System.Drawing.Size(251, 195);
+            this.metroTile5.Style = MetroFramework.MetroColorStyle.Orange;
+            this.metroTile5.TabIndex = 24;
+            this.metroTile5.Text = "Reports";
+            this.metroTile5.TileImage = global::Test.Properties.Resources.if_graph_298791;
+            this.metroTile5.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroTile5.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
+            this.metroTile5.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
+            this.metroTile5.UseSelectable = true;
+            this.metroTile5.UseTileImage = true;
+            this.metroTile5.Click += new System.EventHandler(this.metroTile5_Click);
+            this.metroTile5.MouseHover += new System.EventHandler(this.metroTile5_MouseHover);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(295, 14);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(114, 121);
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
             // 
             // mtAdmin
             // 
@@ -262,140 +429,13 @@
             this.mtSuppliers.Click += new System.EventHandler(this.mtSuppliers_Click);
             this.mtSuppliers.MouseHover += new System.EventHandler(this.mtSuppliers_MouseHover);
             // 
-            // panel1
-            // 
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.lblDay);
-            this.panel1.Controls.Add(this.lblTime);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.lblDate);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.lblUserName);
-            this.panel1.Location = new System.Drawing.Point(1435, 90);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(431, 153);
-            this.panel1.TabIndex = 21;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // metroLabel3
-            // 
-            this.metroLabel3.AutoSize = true;
-            this.metroLabel3.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.metroLabel3.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel3.Location = new System.Drawing.Point(1435, 62);
-            this.metroLabel3.Name = "metroLabel3";
-            this.metroLabel3.Size = new System.Drawing.Size(90, 25);
-            this.metroLabel3.TabIndex = 0;
-            this.metroLabel3.Text = "Welcome!";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(3, 45);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(40, 16);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Date:";
-            // 
-            // lblDate
-            // 
-            this.lblDate.AutoSize = true;
-            this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDate.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblDate.Location = new System.Drawing.Point(134, 45);
-            this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(79, 16);
-            this.lblDate.TabIndex = 6;
-            this.lblDate.Text = "CurrentDate";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(295, 14);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(114, 121);
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(3, 76);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(42, 16);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "Time:";
-            // 
-            // lblTime
-            // 
-            this.lblTime.AutoSize = true;
-            this.lblTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTime.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblTime.Location = new System.Drawing.Point(47, 76);
-            this.lblTime.Name = "lblTime";
-            this.lblTime.Size = new System.Drawing.Size(42, 16);
-            this.lblTime.TabIndex = 9;
-            this.lblTime.Text = "Time:";
-            // 
-            // timer1
-            // 
-            this.timer1.Interval = 10;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // lblDay
-            // 
-            this.lblDay.AutoSize = true;
-            this.lblDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDay.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblDay.Location = new System.Drawing.Point(49, 45);
-            this.lblDay.Name = "lblDay";
-            this.lblDay.Size = new System.Drawing.Size(79, 16);
-            this.lblDay.TabIndex = 10;
-            this.lblDay.Text = "CurrentDate";
-            // 
-            // lbblDetails
-            // 
-            this.lbblDetails.AutoSize = true;
-            this.lbblDetails.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbblDetails.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbblDetails.Location = new System.Drawing.Point(4, 42);
-            this.lbblDetails.Name = "lbblDetails";
-            this.lbblDetails.Size = new System.Drawing.Size(50, 16);
-            this.lbblDetails.TabIndex = 22;
-            this.lbblDetails.Text = "Details";
-            this.lbblDetails.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.lblHelp);
-            this.panel2.Controls.Add(this.lbblDetails);
-            this.panel2.Location = new System.Drawing.Point(1435, 250);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(431, 178);
-            this.panel2.TabIndex = 23;
-            // 
-            // lblHelp
-            // 
-            this.lblHelp.AutoSize = true;
-            this.lblHelp.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.lblHelp.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.lblHelp.Location = new System.Drawing.Point(7, 10);
-            this.lblHelp.Name = "lblHelp";
-            this.lblHelp.Size = new System.Drawing.Size(54, 25);
-            this.lblHelp.TabIndex = 24;
-            this.lblHelp.Text = "Help!";
-            // 
             // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1940, 1100);
+            this.Controls.Add(this.metroTile6);
+            this.Controls.Add(this.metroTile5);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.metroLabel3);
             this.Controls.Add(this.panel1);
@@ -420,9 +460,9 @@
             this.MouseHover += new System.EventHandler(this.MainMenu_MouseHover);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -453,5 +493,7 @@
         private System.Windows.Forms.Label lbblDetails;
         private System.Windows.Forms.Panel panel2;
         private MetroFramework.Controls.MetroLabel lblHelp;
+        private MetroFramework.Controls.MetroTile metroTile5;
+        private MetroFramework.Controls.MetroTile metroTile6;
     }
 }

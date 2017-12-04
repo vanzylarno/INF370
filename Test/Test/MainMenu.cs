@@ -301,5 +301,44 @@ namespace Test
             lblHelp.Hide();
             lbblDetails.Text = "";
         }
+
+        private void ReportsInfo()
+        {
+            lblHelp.Show();
+            lbblDetails.Text = "This Button Opens the Reports Screen!" + "\n" +
+                "Within this Screen you can Create Daily, Monthly and Yearly Reports" + "\n" +
+                "of Crucial System information" + "\n" +
+                "However, this screen is only acessibly by Managers";
+        }
+
+        private void metroTile5_MouseHover(object sender, EventArgs e)
+        {
+            ReportsInfo();
+        }
+        private void ConnectionInfo()
+        {
+            lblHelp.Show();
+            lbblDetails.Text = "This Button Opens the Connection Screen!" + "\n" +
+                "Within this Screen you can Check your Current Database Connection";
+               
+        }
+
+        private void metroTile6_MouseHover(object sender, EventArgs e)
+        {
+            ConnectionInfo();
+        }
+
+        private void metroTile6_Click(object sender, EventArgs e)
+        {
+            Check_Connection myform = new Check_Connection();
+            myform.ShowDialog();
+        }
+
+        private void metroTile5_Click(object sender, EventArgs e)
+        {
+            Reports_Form myform = new Reports_Form();
+            myform.ShowDialog();
+
+        }
     }
 }

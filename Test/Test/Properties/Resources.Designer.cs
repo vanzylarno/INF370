@@ -263,6 +263,26 @@ namespace Test.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap if_globe_172473 {
+            get {
+                object obj = ResourceManager.GetObject("if_globe_172473", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap if_graph_298791 {
+            get {
+                object obj = ResourceManager.GetObject("if_graph_298791", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap if_icons_exit2_1564506 {
             get {
                 object obj = ResourceManager.GetObject("if_icons_exit2_1564506", resourceCulture);
@@ -296,6 +316,16 @@ namespace Test.Properties {
         internal static System.Drawing.Bitmap if_Palm_130244 {
             get {
                 object obj = ResourceManager.GetObject("if_Palm_130244", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap if_radio_tower_298855 {
+            get {
+                object obj = ResourceManager.GetObject("if_radio-tower_298855", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
