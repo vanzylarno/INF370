@@ -127,6 +127,10 @@ namespace Test
                     int onLeave = 0;
                     string LeaveStart = "";
                     string LeaveEnd = "";
+                    decimal SalaryAmount = 0;
+                    string SalaryDatePayable = "";
+                    string SalaryPaymentInterval = "";
+                    decimal SalaryBonus = 0;
 
                     byte[] image = null;
                     FileStream fs = new FileStream(FileLocation, FileMode.Open, FileAccess.Read);
@@ -136,7 +140,7 @@ namespace Test
                     
                     SqlConnection sqlcon = new SqlConnection(Globals_Class.ConnectionString);
                     sqlcon.Open();
-                    string cmd = "INSERT INTO Employees(EmployeeType, EmployeeName, EmployeeSurname, EmployeeEmailAddress, EmployeePhoneNumber, EmployeeDateOfBirth, EmployeeImage, UserName, isOnLeave, LeaveStart, LeaveEnd) VALUES(@EmployeeType, @EmployeeName, @EmployeeSurname, @EmployeeEmailAddress, @EmployeePhoneNumber, @EmployeeDateOfBirth, @EmployeeImage, @UserName, @isOnLeave, @LeaveStart, @LeaveEnd)";
+                    string cmd = "INSERT INTO Employees(EmployeeType, EmployeeName, EmployeeSurname, EmployeeEmailAddress, EmployeePhoneNumber, EmployeeDateOfBirth, EmployeeImage, UserName, isOnLeave, LeaveStart, LeaveEnd, SalaryAmount, SalaryDatePayable, SalaryPaymentInterval, SalaryBonus) VALUES(@EmployeeType, @EmployeeName, @EmployeeSurname, @EmployeeEmailAddress, @EmployeePhoneNumber, @EmployeeDateOfBirth, @EmployeeImage, @UserName, @isOnLeave, @LeaveStart, @LeaveEnd, @SalaryAmount, @SalaryDatePayable, @SalaryPaymentInterval, @SalaryBonus)";
                     SqlCommand sqlcom = new SqlCommand(cmd, sqlcon);
                     sqlcom.Parameters.Add(new SqlParameter("@EmployeeType", EmployeeType));
                     sqlcom.Parameters.Add(new SqlParameter("@EmployeeName", EmployeeName));
@@ -149,6 +153,10 @@ namespace Test
                     sqlcom.Parameters.Add(new SqlParameter("@isOnLeave", onLeave));
                     sqlcom.Parameters.Add(new SqlParameter("@LeaveStart", LeaveStart));
                     sqlcom.Parameters.Add(new SqlParameter("@LeaveEnd", LeaveEnd));
+                    sqlcom.Parameters.Add(new SqlParameter("@SalaryAmount", SalaryAmount));
+                    sqlcom.Parameters.Add(new SqlParameter("@SalaryDatePayable", SalaryDatePayable));
+                    sqlcom.Parameters.Add(new SqlParameter("@SalaryPaymentInterval", SalaryPaymentInterval));
+                    sqlcom.Parameters.Add(new SqlParameter("@SalaryBonus", SalaryBonus));
                     sqlcom.ExecuteNonQuery();
                     sqlcon.Close();
 

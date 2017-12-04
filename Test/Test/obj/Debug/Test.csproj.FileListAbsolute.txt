@@ -241,3 +241,4 @@ F:\GitHub\INF370\Test\Test\obj\Debug\Test.Find_Employee.resources
 F:\GitHub\INF370\Test\Test\obj\Debug\Test.Delete_a_Employee.resources
 F:\GitHub\INF370\Test\Test\obj\Debug\Test.Update_an_Employee.resources
 F:\GitHub\INF370\Test\Test\obj\Debug\Test.Leave_Form.resources
+F:\GitHub\INF370\Test\Test\obj\Debug\Test.Evaluate_Salary.resources

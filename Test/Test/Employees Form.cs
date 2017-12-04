@@ -52,5 +52,11 @@ namespace Test
             Leave_Form myform = new Leave_Form();
             myform.ShowDialog();
         }
+
+        private void metroTile2_Click(object sender, EventArgs e)
+        {
+            Evaluate_Salary myform = new Evaluate_Salary();
+            myform.ShowDialog();
+        }
     }
 }

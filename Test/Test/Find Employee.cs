@@ -77,7 +77,7 @@ namespace Test
                 DataSet ds = new DataSet();
 
                 da.Fill(ds);
-                sqlcon.Close();
+                sqlcon2.Close();
                 byte[] image = (byte[])(ds.Tables[0].Rows[0]["EmployeeImage"]);
                 MemoryStream ms = new MemoryStream(image);
                 pictureBox1.Image = Image.FromStream(ms);
