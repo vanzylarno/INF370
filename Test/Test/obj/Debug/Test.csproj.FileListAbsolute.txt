@@ -134,7 +134,6 @@ C:\Users\vanzy\Desktop\Die Universiteit van Pretoria\INF 370\Test\Test\obj\Debug
 F:\GitHub\INF370\Test\Test\bin\Debug\Test.exe.config
 F:\GitHub\INF370\Test\Test\bin\Debug\Test.exe
 F:\GitHub\INF370\Test\Test\bin\Debug\Test.pdb
-F:\GitHub\INF370\Test\Test\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
 F:\GitHub\INF370\Test\Test\bin\Debug\EntityFramework.dll
 F:\GitHub\INF370\Test\Test\bin\Debug\EntityFramework.SqlServer.dll
 F:\GitHub\INF370\Test\Test\bin\Debug\FirstFloor.ModernUI.dll
@@ -155,12 +154,7 @@ F:\GitHub\INF370\Test\Test\bin\Debug\Microsoft.SqlServer.Smo.dll
 F:\GitHub\INF370\Test\Test\bin\Debug\Microsoft.SqlServer.SmoExtended.dll
 F:\GitHub\INF370\Test\Test\bin\Debug\Microsoft.SqlServer.SqlClrProvider.dll
 F:\GitHub\INF370\Test\Test\bin\Debug\Microsoft.SqlServer.SqlEnum.dll
-F:\GitHub\INF370\Test\Test\bin\Debug\System.Web.DataVisualization.Design.dll
-F:\GitHub\INF370\Test\Test\bin\Debug\System.Web.DataVisualization.dll
-F:\GitHub\INF370\Test\Test\bin\Debug\System.Windows.Forms.DataVisualization.Design.dll
-F:\GitHub\INF370\Test\Test\bin\Debug\System.Windows.Forms.DataVisualization.dll
 F:\GitHub\INF370\Test\Test\bin\Debug\System.Windows.Interactivity.dll
-F:\GitHub\INF370\Test\Test\bin\Debug\stdole.dll
 F:\GitHub\INF370\Test\Test\bin\Debug\EntityFramework.xml
 F:\GitHub\INF370\Test\Test\bin\Debug\EntityFramework.SqlServer.xml
 F:\GitHub\INF370\Test\Test\bin\Debug\FirstFloor.ModernUI.xml
@@ -244,3 +238,6 @@ F:\GitHub\INF370\Test\Test\obj\Debug\Test.Leave_Form.resources
 F:\GitHub\INF370\Test\Test\obj\Debug\Test.Evaluate_Salary.resources
 F:\GitHub\INF370\Test\Test\obj\Debug\Test.Check_Connection.resources
 F:\GitHub\INF370\Test\Test\obj\Debug\Test.Reports_Form.resources
+F:\GitHub\INF370\Test\Test\bin\Debug\Zen.Barcode.Core.dll
+F:\GitHub\INF370\Test\Test\obj\Debug\Test.Inventory_Report_Page.resources
+F:\GitHub\INF370\Test\Test\obj\Debug\Test.Suppliers_Report_Form.resources

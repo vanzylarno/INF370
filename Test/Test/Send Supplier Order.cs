@@ -12,7 +12,7 @@ using System.Data.SqlClient;
 using System.Net;
 using System.Net.Mail;
 using System.Web;
-using System.Web.UI;
+
 
 
 namespace Test
@@ -144,12 +144,13 @@ namespace Test
                         //Insert Values into SupplierOrder Table
                         SqlConnection sqlcon3 = new SqlConnection(Globals_Class.ConnectionString);
                         sqlcon3.Open();
-                        string Command3 = "INSERT INTO SupplierOrder(SupplierID, SupplierOrderQuantity, SupplierOrderDate, ProductID) VALUES(@SupplierID, @SupplierOrderQuantity, @SupplierOrderDate, @ProductID)";
+                        string Command3 = "INSERT INTO SupplierOrder(SupplierID, SupplierOrderQuantity, SupplierOrderDate, ProductID, SupplierName) VALUES(@SupplierID, @SupplierOrderQuantity, @SupplierOrderDate, @ProductID, @SupplierName)";
                         SqlCommand sqlcom3 = new SqlCommand(Command3, sqlcon3);
                         sqlcom3.Parameters.Add(new SqlParameter("@SupplierID", SelectedSupplierID));
                         sqlcom3.Parameters.Add(new SqlParameter("@SupplierOrderQuantity", SupplierOrderQuantity));
                         sqlcom3.Parameters.Add(new SqlParameter("@SupplierOrderDate", dateTime));
                         sqlcom3.Parameters.Add(new SqlParameter("@ProductID", SelectedSupplierOrderProductID));
+                        sqlcom3.Parameters.Add(new SqlParameter("@SupplierName", SelectedSupplierName));
                         sqlcom3.ExecuteNonQuery();
                         
                         sqlcon3.Close();

@@ -32,9 +32,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
-      <HintPath>..\packages\CrystalDecisions.CrystalReports.Engine.1.0.0\lib\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
-    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -64,6 +61,11 @@
     </Reference>
     <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
       <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\packages\Microsoft.Office.Interop.Word.15.0.4797.1003\lib\net20\Microsoft.Office.Interop.Word.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.Common.dll</HintPath>
@@ -109,22 +111,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
-    <Reference Include="System.Web.DataVisualization">
-      <HintPath>..\packages\Microsoft.Chart.Controls.3.5.30729\lib\net35\System.Web.DataVisualization.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.Web.DataVisualization.Design">
-      <HintPath>..\packages\Microsoft.Chart.Controls.3.5.30729\lib\net35\System.Web.DataVisualization.Design.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.Windows.Forms.DataVisualization">
-      <HintPath>..\packages\Microsoft.Chart.Controls.3.5.30729\lib\net35\System.Windows.Forms.DataVisualization.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.Windows.Forms.DataVisualization.Design">
-      <HintPath>..\packages\Microsoft.Chart.Controls.3.5.30729\lib\net35\System.Windows.Forms.DataVisualization.Design.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\MahApps.Metro.1.5.0\lib\net45\System.Windows.Interactivity.dll</HintPath>
     </Reference>
@@ -140,6 +127,9 @@
     <Reference Include="System.Xml" />
     <Reference Include="WindowsBase" />
     <Reference Include="WindowsFormsIntegration" />
+    <Reference Include="Zen.Barcode.Core, Version=3.1.0.0, Culture=neutral, PublicKeyToken=b5ae55aa76d2d9de, processorArchitecture=MSIL">
+      <HintPath>..\packages\Zen.Barcode.Rendering.Framework.3.1.10729.1\lib\Zen.Barcode.Core.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Account Settings Form.cs">
@@ -372,6 +362,12 @@
     <Compile Include="Inventory Form.Designer.cs">
       <DependentUpon>Inventory Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="Inventory Report Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory Report Page.Designer.cs">
+      <DependentUpon>Inventory Report Page.cs</DependentUpon>
+    </Compile>
     <Compile Include="Leave Form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -476,6 +472,12 @@
     </Compile>
     <Compile Include="Suppliers Form.Designer.cs">
       <DependentUpon>Suppliers Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Suppliers Report Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Suppliers Report Form.Designer.cs">
+      <DependentUpon>Suppliers Report Form.cs</DependentUpon>
     </Compile>
     <Compile Include="TestDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -686,6 +688,9 @@
     <EmbeddedResource Include="Inventory Form.resx">
       <DependentUpon>Inventory Form.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Inventory Report Page.resx">
+      <DependentUpon>Inventory Report Page.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Leave Form.resx">
       <DependentUpon>Leave Form.cs</DependentUpon>
     </EmbeddedResource>
@@ -729,6 +734,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Suppliers Form.resx">
       <DependentUpon>Suppliers Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Suppliers Report Form.resx">
+      <DependentUpon>Suppliers Report Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Update a Supplier Form.resx">
       <DependentUpon>Update a Supplier Form.cs</DependentUpon>

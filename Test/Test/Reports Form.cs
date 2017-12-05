@@ -23,5 +23,17 @@ namespace Test
         {
 
         }
+
+        private void mtInventory_Click(object sender, EventArgs e)
+        {
+            Inventory_Report_Page myform = new Inventory_Report_Page();
+            myform.ShowDialog();
+        }
+
+        private void mtSuppliers_Click(object sender, EventArgs e)
+        {
+            Suppliers_Report_Form myform = new Suppliers_Report_Form();
+            myform.ShowDialog();
+        }
     }
 }

@@ -89,7 +89,7 @@ namespace Test
                 //Get ProductID
                 SqlConnection sqlcon2 = new SqlConnection(Globals_Class.ConnectionString);
                 sqlcon2.Open();
-                string Select = "SELECT SupplierOrderProductID FROM SupplierOrder WHERE SupplierOrderID ='" + lbxSupplierOrders.Text.ToString() + "'";
+                string Select = "SELECT ProductID FROM SupplierOrder WHERE SupplierOrderID ='" + lbxSupplierOrders.Text.ToString() + "'";
                 SqlCommand sqlcom2 = new SqlCommand(Select, sqlcon2);
                 SqlDataReader myReader;
                 myReader = sqlcom2.ExecuteReader();
@@ -100,11 +100,11 @@ namespace Test
                     {
                       
                         //Load Product Name
-                        ProductID = Convert.ToInt32((myReader["SupplierOrderProductID"]));
+                        ProductID = Convert.ToInt32((myReader["ProductID"]));
 
                         SqlConnection sqlcon5 = new SqlConnection(Globals_Class.ConnectionString);
                         sqlcon5.Open();
-                        string Select5 = "SELECT SupplierOrderProductName FROM SupplierOrderProduct WHERE SupplierOrderProductID ='" + ProductID + "'";
+                        string Select5 = "SELECT ProductName FROM Products WHERE ProductID ='" + ProductID + "'";
                         SqlCommand sqlcom5 = new SqlCommand(Select5, sqlcon5);
                         SqlDataReader myReader5;
                         myReader5 = sqlcom5.ExecuteReader();
@@ -113,8 +113,8 @@ namespace Test
                         {
                             while (myReader5.Read())
                             {
-                                lblProductOrdered.Text = (myReader5["SupplierOrderProductName"].ToString());
-                                ProductName = (myReader5["SupplierOrderProductName"].ToString());
+                                lblProductOrdered.Text = (myReader5["ProductName"].ToString());
+                                ProductName = (myReader5["ProductName"].ToString());
 
                             }
                         }
@@ -283,10 +283,11 @@ namespace Test
                     datetime = monthCalendar1.SelectionStart.Date;
                     SupplierOrderID = Convert.ToInt32(lbxSupplierOrders.Text);
                     int newReceivedStatus = 1;
+                string SupplierName = lblOrderedFrom.Text;
 
                     SqlConnection sqlcon = new SqlConnection(Globals_Class.ConnectionString);
                     sqlcon.Open();
-                    string cmd = "INSERT INTO ReceiveSupplierOrder(SupplierOrderID, SupplierID, ProductName, ProductQuantity, ReceivedDate, OrderCost, ReceivedStatus) VALUES(@SupplierOrderID, @SupplierID, @ProductName, @ProductQuantity, @ReceivedDate, @OrderCost, @ReceivedStatus)";
+                    string cmd = "INSERT INTO ReceiveSupplierOrder(SupplierOrderID, SuppleirID, ProductName, ProductQuantity, ReceivedDate, OrderCost, ReceivedStatus, SupplierName) VALUES(@SupplierOrderID, @SupplierID, @ProductName, @ProductQuantity, @ReceivedDate, @OrderCost, @ReceivedStatus, @SupplierName)";
                     SqlCommand sqlcom = new SqlCommand(cmd, sqlcon);
                     sqlcom.Parameters.Add(new SqlParameter("@SupplierOrderID", SupplierOrderID));
                     sqlcom.Parameters.Add(new SqlParameter("@SupplierID", SupplierID));
@@ -295,7 +296,8 @@ namespace Test
                     sqlcom.Parameters.Add(new SqlParameter("@ReceivedDate", datetime));
                     sqlcom.Parameters.Add(new SqlParameter("@OrderCost", Cost));
                     sqlcom.Parameters.Add(new SqlParameter("@ReceivedStatus", newReceivedStatus));
-                    sqlcom.ExecuteNonQuery();
+                sqlcom.Parameters.Add(new SqlParameter("@SupplierName", SupplierName));
+                sqlcom.ExecuteNonQuery();
 
                     MetroFramework.MetroMessageBox.Show(this, "The Order has been Received Successfully!", "Message", MessageBoxButtons.OK, MessageBoxIcon.None);
 
