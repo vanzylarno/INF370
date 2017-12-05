@@ -112,6 +112,7 @@
             this.AddSupplier.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
             this.AddSupplier.UseSelectable = true;
             this.AddSupplier.UseTileImage = true;
+            this.AddSupplier.Click += new System.EventHandler(this.AddSupplier_Click);
             // 
             // metroTile3
             // 
@@ -127,6 +128,7 @@
             this.metroTile3.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
             this.metroTile3.UseSelectable = true;
             this.metroTile3.UseTileImage = true;
+            this.metroTile3.Click += new System.EventHandler(this.metroTile3_Click);
             // 
             // mtSuppliers
             // 

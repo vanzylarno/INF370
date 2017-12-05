@@ -35,5 +35,17 @@ namespace Test
             Suppliers_Report_Form myform = new Suppliers_Report_Form();
             myform.ShowDialog();
         }
+
+        private void metroTile3_Click(object sender, EventArgs e)
+        {
+            Customers_Report_Page myform = new Customers_Report_Page();
+            myform.ShowDialog();
+        }
+
+        private void AddSupplier_Click(object sender, EventArgs e)
+        {
+            Wine_Tasting_Report_Page myform = new Wine_Tasting_Report_Page();
+            myform.ShowDialog();
+        }
     }
 }

@@ -241,3 +241,5 @@ F:\GitHub\INF370\Test\Test\obj\Debug\Test.Reports_Form.resources
 F:\GitHub\INF370\Test\Test\bin\Debug\Zen.Barcode.Core.dll
 F:\GitHub\INF370\Test\Test\obj\Debug\Test.Inventory_Report_Page.resources
 F:\GitHub\INF370\Test\Test\obj\Debug\Test.Suppliers_Report_Form.resources
+F:\GitHub\INF370\Test\Test\obj\Debug\Test.Customers_Report_Page.resources
+F:\GitHub\INF370\Test\Test\obj\Debug\Test.Wine_Tasting_Report_Page.resources

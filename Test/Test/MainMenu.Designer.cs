@@ -32,16 +32,19 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lblUserName = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lblDate = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.lblTime = new System.Windows.Forms.Label();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.lblDay = new System.Windows.Forms.Label();
+            this.lblTime = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lblDate = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.lbblDetails = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblHelp = new MetroFramework.Controls.MetroLabel();
+            this.metroTile9 = new MetroFramework.Controls.MetroTile();
+            this.metroTile8 = new MetroFramework.Controls.MetroTile();
+            this.metroTile7 = new MetroFramework.Controls.MetroTile();
             this.metroTile6 = new MetroFramework.Controls.MetroTile();
             this.metroTile5 = new MetroFramework.Controls.MetroTile();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -100,49 +103,16 @@
             this.panel1.TabIndex = 21;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // metroLabel3
+            // lblDay
             // 
-            this.metroLabel3.AutoSize = true;
-            this.metroLabel3.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.metroLabel3.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel3.Location = new System.Drawing.Point(1435, 62);
-            this.metroLabel3.Name = "metroLabel3";
-            this.metroLabel3.Size = new System.Drawing.Size(90, 25);
-            this.metroLabel3.TabIndex = 0;
-            this.metroLabel3.Text = "Welcome!";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(3, 45);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(40, 16);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Date:";
-            // 
-            // lblDate
-            // 
-            this.lblDate.AutoSize = true;
-            this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDate.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblDate.Location = new System.Drawing.Point(134, 45);
-            this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(79, 16);
-            this.lblDate.TabIndex = 6;
-            this.lblDate.Text = "CurrentDate";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(3, 76);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(42, 16);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "Time:";
+            this.lblDay.AutoSize = true;
+            this.lblDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDay.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblDay.Location = new System.Drawing.Point(49, 45);
+            this.lblDay.Name = "lblDay";
+            this.lblDay.Size = new System.Drawing.Size(79, 16);
+            this.lblDay.TabIndex = 10;
+            this.lblDay.Text = "CurrentDate";
             // 
             // lblTime
             // 
@@ -155,21 +125,54 @@
             this.lblTime.TabIndex = 9;
             this.lblTime.Text = "Time:";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label3.Location = new System.Drawing.Point(3, 76);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(42, 16);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Time:";
+            // 
+            // lblDate
+            // 
+            this.lblDate.AutoSize = true;
+            this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDate.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblDate.Location = new System.Drawing.Point(134, 45);
+            this.lblDate.Name = "lblDate";
+            this.lblDate.Size = new System.Drawing.Size(79, 16);
+            this.lblDate.TabIndex = 6;
+            this.lblDate.Text = "CurrentDate";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label2.Location = new System.Drawing.Point(3, 45);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(40, 16);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Date:";
+            // 
+            // metroLabel3
+            // 
+            this.metroLabel3.AutoSize = true;
+            this.metroLabel3.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel3.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.metroLabel3.Location = new System.Drawing.Point(1435, 62);
+            this.metroLabel3.Name = "metroLabel3";
+            this.metroLabel3.Size = new System.Drawing.Size(90, 25);
+            this.metroLabel3.TabIndex = 0;
+            this.metroLabel3.Text = "Welcome!";
+            // 
             // timer1
             // 
             this.timer1.Interval = 10;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // lblDay
-            // 
-            this.lblDay.AutoSize = true;
-            this.lblDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDay.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblDay.Location = new System.Drawing.Point(49, 45);
-            this.lblDay.Name = "lblDay";
-            this.lblDay.Size = new System.Drawing.Size(79, 16);
-            this.lblDay.TabIndex = 10;
-            this.lblDay.Text = "CurrentDate";
             // 
             // lbblDetails
             // 
@@ -202,6 +205,57 @@
             this.lblHelp.Size = new System.Drawing.Size(54, 25);
             this.lblHelp.TabIndex = 24;
             this.lblHelp.Text = "Help!";
+            // 
+            // metroTile9
+            // 
+            this.metroTile9.ActiveControl = null;
+            this.metroTile9.Location = new System.Drawing.Point(537, 493);
+            this.metroTile9.Name = "metroTile9";
+            this.metroTile9.Size = new System.Drawing.Size(251, 195);
+            this.metroTile9.Style = MetroFramework.MetroColorStyle.Orange;
+            this.metroTile9.TabIndex = 28;
+            this.metroTile9.Text = "Notifications";
+            this.metroTile9.TileImage = global::Test.Properties.Resources.if_about_2639759;
+            this.metroTile9.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroTile9.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
+            this.metroTile9.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
+            this.metroTile9.UseSelectable = true;
+            this.metroTile9.UseTileImage = true;
+            this.metroTile9.MouseHover += new System.EventHandler(this.metroTile9_MouseHover);
+            // 
+            // metroTile8
+            // 
+            this.metroTile8.ActiveControl = null;
+            this.metroTile8.Location = new System.Drawing.Point(537, 292);
+            this.metroTile8.Name = "metroTile8";
+            this.metroTile8.Size = new System.Drawing.Size(251, 195);
+            this.metroTile8.Style = MetroFramework.MetroColorStyle.Orange;
+            this.metroTile8.TabIndex = 27;
+            this.metroTile8.Text = "Messaging";
+            this.metroTile8.TileImage = global::Test.Properties.Resources.if_sms_2639922;
+            this.metroTile8.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroTile8.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
+            this.metroTile8.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
+            this.metroTile8.UseSelectable = true;
+            this.metroTile8.UseTileImage = true;
+            this.metroTile8.MouseHover += new System.EventHandler(this.metroTile8_MouseHover);
+            // 
+            // metroTile7
+            // 
+            this.metroTile7.ActiveControl = null;
+            this.metroTile7.Location = new System.Drawing.Point(537, 90);
+            this.metroTile7.Name = "metroTile7";
+            this.metroTile7.Size = new System.Drawing.Size(251, 195);
+            this.metroTile7.Style = MetroFramework.MetroColorStyle.Orange;
+            this.metroTile7.TabIndex = 26;
+            this.metroTile7.Text = "Mailing";
+            this.metroTile7.TileImage = global::Test.Properties.Resources.if_mail_24_103176;
+            this.metroTile7.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroTile7.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
+            this.metroTile7.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
+            this.metroTile7.UseSelectable = true;
+            this.metroTile7.UseTileImage = true;
+            this.metroTile7.MouseHover += new System.EventHandler(this.metroTile7_MouseHover);
             // 
             // metroTile6
             // 
@@ -292,7 +346,7 @@
             this.metroTile4.Style = MetroFramework.MetroColorStyle.Orange;
             this.metroTile4.TabIndex = 18;
             this.metroTile4.Text = "Events";
-            this.metroTile4.TileImage = global::Test.Properties.Resources.Events;
+            this.metroTile4.TileImage = global::Test.Properties.Resources.if_star_2639925;
             this.metroTile4.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.metroTile4.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
             this.metroTile4.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
@@ -434,6 +488,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1940, 1100);
+            this.Controls.Add(this.metroTile9);
+            this.Controls.Add(this.metroTile8);
+            this.Controls.Add(this.metroTile7);
             this.Controls.Add(this.metroTile6);
             this.Controls.Add(this.metroTile5);
             this.Controls.Add(this.panel2);
@@ -495,5 +552,8 @@
         private MetroFramework.Controls.MetroLabel lblHelp;
         private MetroFramework.Controls.MetroTile metroTile5;
         private MetroFramework.Controls.MetroTile metroTile6;
+        private MetroFramework.Controls.MetroTile metroTile7;
+        private MetroFramework.Controls.MetroTile metroTile8;
+        private MetroFramework.Controls.MetroTile metroTile9;
     }
 }

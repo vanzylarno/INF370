@@ -340,5 +340,44 @@ namespace Test
             myform.ShowDialog();
 
         }
+        private void MailingInfo()
+        {
+            lblHelp.Show();
+            lbblDetails.Text = "This Button Opens the Mailing Screen!" + "\n" +
+                "Within this Screen you can Send and Receive Emails to and " + "\n" +
+                "from your System's Email Address";
+
+        }
+        private void metroTile7_MouseHover(object sender, EventArgs e)
+        {
+            MailingInfo();
+        }
+
+        private void MessagingInfo()
+        {
+            lblHelp.Show();
+            lbblDetails.Text = "This Button Opens the Messaging Screen!" + "\n" +
+                "Within this Screen you can Send Messages to Clients, Suppliers"
+                +"\n" + "or Employees. However, this screen is only accessible by Management";
+
+        }
+
+        private void metroTile8_MouseHover(object sender, EventArgs e)
+        {
+            MessagingInfo();
+        }
+
+        private void NotificationInfo()
+        {
+            lblHelp.Show();
+            lbblDetails.Text = "This Button Opens the Notification Screen!" + "\n" +
+                "Within this Screen all System Notifications will be Provided";
+
+        }
+
+        private void metroTile9_MouseHover(object sender, EventArgs e)
+        {
+            NotificationInfo();
+        }
     }
 }

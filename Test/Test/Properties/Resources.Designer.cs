@@ -193,6 +193,16 @@ namespace Test.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap if_about_2639759 {
+            get {
+                object obj = ResourceManager.GetObject("if_about_2639759", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap if_camera_configuration_340382 {
             get {
                 object obj = ResourceManager.GetObject("if_camera_configuration_340382", resourceCulture);
@@ -303,6 +313,16 @@ namespace Test.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap if_mail_24_103176 {
+            get {
+                object obj = ResourceManager.GetObject("if_mail-24_103176", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap if_money_bag_309025 {
             get {
                 object obj = ResourceManager.GetObject("if_money_bag_309025", resourceCulture);
@@ -356,6 +376,26 @@ namespace Test.Properties {
         internal static System.Drawing.Bitmap if_settings_115801 {
             get {
                 object obj = ResourceManager.GetObject("if_settings_115801", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap if_sms_2639922 {
+            get {
+                object obj = ResourceManager.GetObject("if_sms_2639922", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap if_star_2639925 {
+            get {
+                object obj = ResourceManager.GetObject("if_star_2639925", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
