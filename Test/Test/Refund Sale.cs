@@ -20,6 +20,9 @@ namespace Test
         {
             InitializeComponent();
         }
+        string EmployeeName;
+        int SalesMadeSoFar;
+        int SaleRefunded = 1;
         int isMember;
         string SelectedCustomer;
         decimal CurrentPoints;
@@ -291,7 +294,6 @@ namespace Test
                             cbxCustomerName.Items.Add((dr2["CustomerFullName"].ToString()));
                         }
                     }
-
 
 
                 }

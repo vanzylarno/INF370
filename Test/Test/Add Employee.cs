@@ -162,6 +162,17 @@ namespace Test
 
                     MetroFramework.MetroMessageBox.Show(this, "New Employee Added Successfully!", "Message", MessageBoxButtons.OK, MessageBoxIcon.None);
 
+                    int Zero = 0;
+
+                    SqlConnection sqlconz = new SqlConnection(Globals_Class.ConnectionString);
+                    sqlconz.Open();
+                    string cmdz = "INSERT INTO SalesMade(EmployeeName, TotalSalesMade) VALUES(@Name, @Zero)";
+                    SqlCommand sqlcomz = new SqlCommand(cmdz, sqlconz);
+                    sqlcomz.Parameters.Add(new SqlParameter("@Name", EmployeeName));
+                    sqlcomz.Parameters.Add(new SqlParameter("@Zero", Zero));
+                    sqlcomz.ExecuteNonQuery();
+                    sqlconz.Close();
+
                     cbxEmployeeType.Text = "";
                     txtEmployeeName.Text = "";
                     txtEmployeeSurname.Text = "";

@@ -18,6 +18,7 @@ namespace Test
         {
             InitializeComponent();
         }
+        string EmployeeName;
         string EmployeeType;
         private void MainMenu_Load(object sender, EventArgs e)
         {
@@ -114,7 +115,50 @@ namespace Test
             }
             reader3.Close();
             sqlcon3.Close();
-            
+            try
+            {
+
+                //Get Employee Instance
+                SqlConnection sqlcons = new SqlConnection(Globals_Class.ConnectionString);
+                sqlcons.Open();
+                string cmds = "SELECT EmployeeName From Employees WHERE UserName ='" + Globals_Class.UserName.ToString() + "'";
+                SqlCommand sqlcoms = new SqlCommand(cmds, sqlcons);
+                SqlDataReader rs;
+                rs = sqlcoms.ExecuteReader();
+                if (rs.HasRows)
+                {
+                    while (rs.Read())
+                    {
+                        EmployeeName = (rs["EmployeeName"].ToString());
+                    }
+                }
+                rs.Close();
+                sqlcons.Close();
+
+                //Get Sales Made
+                SqlConnection sqlconz = new SqlConnection(Globals_Class.ConnectionString);
+                sqlconz.Open();
+                string cmdz = "SELECT TotalSalesMade FROM SalesMade WHERE EmployeeName ='" + EmployeeName.ToString() + "'";
+                SqlCommand sqlcomz = new SqlCommand(cmdz, sqlconz);
+                SqlDataReader drz = sqlcomz.ExecuteReader();
+                if (drz.HasRows)
+                {
+                    while (drz.Read())
+                    {
+                        lblSalesMade.Text = (drz["TotalSalesMade"].ToString());
+                    }
+                }
+                else
+                {
+                    lblSalesMade.Text = "0";
+                }
+                drz.Close();
+                sqlconz.Close();
+            }
+            catch
+            {
+                
+            }
 
         }
 
@@ -459,6 +503,32 @@ namespace Test
             }
             reader3.Close();
             sqlcon3.Close();
+            try
+            {
+                //Get Sales Made
+                SqlConnection sqlconz = new SqlConnection(Globals_Class.ConnectionString);
+                sqlconz.Open();
+                string cmdz = "SELECT TotalSalesMade FROM SalesMade WHERE EmployeeName ='" + EmployeeName.ToString() + "'";
+                SqlCommand sqlcomz = new SqlCommand(cmdz, sqlconz);
+                SqlDataReader drz = sqlcomz.ExecuteReader();
+                if (drz.HasRows)
+                {
+                    while (drz.Read())
+                    {
+                        lblSalesMade.Text = (drz["TotalSalesMade"].ToString());
+                    }
+                }
+                else
+                {
+                    lblSalesMade.Text = "0";
+                }
+                drz.Close();
+                sqlconz.Close();
+            }
+            catch
+            {
+                lblSalesMade.Text = "0";
+            }
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)

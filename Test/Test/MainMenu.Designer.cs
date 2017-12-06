@@ -62,6 +62,8 @@
             this.mtSettings = new MetroFramework.Controls.MetroTile();
             this.mtLogout = new MetroFramework.Controls.MetroTile();
             this.mtSuppliers = new MetroFramework.Controls.MetroTile();
+            this.label4 = new System.Windows.Forms.Label();
+            this.lblSalesMade = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -94,6 +96,8 @@
             // 
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.lblSalesMade);
+            this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.lblTime);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.pictureBox1);
@@ -550,6 +554,28 @@
             this.mtSuppliers.Click += new System.EventHandler(this.mtSuppliers_Click);
             this.mtSuppliers.MouseHover += new System.EventHandler(this.mtSuppliers_MouseHover);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label4.Location = new System.Drawing.Point(3, 119);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(84, 16);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "Sales Made:";
+            // 
+            // lblSalesMade
+            // 
+            this.lblSalesMade.AutoSize = true;
+            this.lblSalesMade.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSalesMade.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblSalesMade.Location = new System.Drawing.Point(93, 119);
+            this.lblSalesMade.Name = "lblSalesMade";
+            this.lblSalesMade.Size = new System.Drawing.Size(42, 16);
+            this.lblSalesMade.TabIndex = 11;
+            this.lblSalesMade.Text = "Time:";
+            // 
             // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -629,5 +655,7 @@
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Label lblDate;
         private System.Windows.Forms.Timer refreshNotifications;
+        private System.Windows.Forms.Label lblSalesMade;
+        private System.Windows.Forms.Label label4;
     }
 }

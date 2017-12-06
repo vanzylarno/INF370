@@ -18,11 +18,14 @@ namespace Test
         {
             InitializeComponent();
         }
+        int SalesMadeSoFar;
+        string EmployeeName;
         string SelectedCustomer;
         int isMember;
         int FinalCost;
         int CurrentCost = 0;
         decimal CurrentPoints;
+        int MadeSale = 1;
 
         private void Make_a_New_Sale_Load(object sender, EventArgs e)
         {
@@ -338,6 +341,49 @@ namespace Test
 
                 cbxCustomerName.Text = "";
                 cbxCustomerName.Enabled = true;
+
+                //Add To SalesMAde by Employee
+                //Get Employee Instance
+                SqlConnection sqlcons = new SqlConnection(Globals_Class.ConnectionString);
+                sqlcons.Open();
+                string cmds = "SELECT EmployeeName From Employees WHERE UserName ='" + Globals_Class.UserName.ToString() + "'";
+                SqlCommand sqlcoms = new SqlCommand(cmds, sqlcons);
+                SqlDataReader rs;
+                rs = sqlcoms.ExecuteReader();
+                if(rs.HasRows)
+                {
+                    while(rs.Read())
+                    {
+                        EmployeeName = (rs["EmployeeName"].ToString());
+                    }
+                }
+                rs.Close();
+                sqlcons.Close();
+
+                //Get Current Amount of Sales
+                SqlConnection sql = new SqlConnection(Globals_Class.ConnectionString);
+                sql.Open();
+                string sqlcmd = "SELECT TotalSalesMade FROM SalesMade WHERE EmployeeName ='" + EmployeeName.ToString() + "'";
+                SqlCommand sqlcomss = new SqlCommand(sqlcmd, sql);
+                SqlDataReader sqlreader = sqlcomss.ExecuteReader();
+                if(sqlreader.HasRows)
+                {
+                    while(sqlreader.Read())
+                    {
+                        SalesMadeSoFar = Convert.ToInt32((sqlreader["TotalSalesMade"]));
+                    }
+                }
+                sqlreader.Close();
+                sql.Close();
+                int TotalSalesMadeSoFar = SalesMadeSoFar + MadeSale;
+                //Update TotalAmount of Sales Made
+                SqlConnection sqlz = new SqlConnection(Globals_Class.ConnectionString);
+                sqlz.Open();
+                string cmdz = "UPDATE SalesMade SET TotalSalesMade = @TotalAmountofSalesMade WHERE EmployeeName ='" + EmployeeName.ToString() + "'";
+                SqlCommand sqlcomz = new SqlCommand(cmdz, sqlz);
+                sqlcomz.Parameters.Add(new SqlParameter("@TotalAmountofSalesMade", TotalSalesMadeSoFar));
+                sqlcomz.ExecuteNonQuery();
+                sqlz.Close();
 
 
              
