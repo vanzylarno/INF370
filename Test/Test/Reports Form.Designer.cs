@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.metroTile4 = new MetroFramework.Controls.MetroTile();
-            this.mtEmployees = new MetroFramework.Controls.MetroTile();
             this.metroTile2 = new MetroFramework.Controls.MetroTile();
             this.metroTile1 = new MetroFramework.Controls.MetroTile();
             this.AddSupplier = new MetroFramework.Controls.MetroTile();
@@ -37,36 +35,6 @@
             this.mtSuppliers = new MetroFramework.Controls.MetroTile();
             this.mtInventory = new MetroFramework.Controls.MetroTile();
             this.SuspendLayout();
-            // 
-            // metroTile4
-            // 
-            this.metroTile4.ActiveControl = null;
-            this.metroTile4.Location = new System.Drawing.Point(746, 286);
-            this.metroTile4.Name = "metroTile4";
-            this.metroTile4.Size = new System.Drawing.Size(236, 195);
-            this.metroTile4.Style = MetroFramework.MetroColorStyle.Orange;
-            this.metroTile4.TabIndex = 23;
-            this.metroTile4.Text = "Create a Users Report";
-            this.metroTile4.TileImage = global::Test.Properties.Resources.Add;
-            this.metroTile4.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.metroTile4.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
-            this.metroTile4.UseSelectable = true;
-            this.metroTile4.UseTileImage = true;
-            // 
-            // mtEmployees
-            // 
-            this.mtEmployees.ActiveControl = null;
-            this.mtEmployees.Location = new System.Drawing.Point(746, 85);
-            this.mtEmployees.Name = "mtEmployees";
-            this.mtEmployees.Size = new System.Drawing.Size(236, 195);
-            this.mtEmployees.Style = MetroFramework.MetroColorStyle.Orange;
-            this.mtEmployees.TabIndex = 22;
-            this.mtEmployees.Text = "Create an Employees Report";
-            this.mtEmployees.TileImage = global::Test.Properties.Resources.Employeesz;
-            this.mtEmployees.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.mtEmployees.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
-            this.mtEmployees.UseSelectable = true;
-            this.mtEmployees.UseTileImage = true;
             // 
             // metroTile2
             // 
@@ -82,6 +50,7 @@
             this.metroTile2.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
             this.metroTile2.UseSelectable = true;
             this.metroTile2.UseTileImage = true;
+            this.metroTile2.Click += new System.EventHandler(this.metroTile2_Click);
             // 
             // metroTile1
             // 
@@ -97,6 +66,7 @@
             this.metroTile1.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
             this.metroTile1.UseSelectable = true;
             this.metroTile1.UseTileImage = true;
+            this.metroTile1.Click += new System.EventHandler(this.metroTile1_Click);
             // 
             // AddSupplier
             // 
@@ -166,9 +136,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1001, 499);
-            this.Controls.Add(this.metroTile4);
-            this.Controls.Add(this.mtEmployees);
+            this.ClientSize = new System.Drawing.Size(748, 499);
             this.Controls.Add(this.metroTile2);
             this.Controls.Add(this.metroTile1);
             this.Controls.Add(this.AddSupplier);
@@ -194,7 +162,5 @@
         private MetroFramework.Controls.MetroTile AddSupplier;
         private MetroFramework.Controls.MetroTile metroTile1;
         private MetroFramework.Controls.MetroTile metroTile2;
-        private MetroFramework.Controls.MetroTile mtEmployees;
-        private MetroFramework.Controls.MetroTile metroTile4;
     }
 }

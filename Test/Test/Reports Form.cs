@@ -47,5 +47,17 @@ namespace Test
             Wine_Tasting_Report_Page myform = new Wine_Tasting_Report_Page();
             myform.ShowDialog();
         }
+
+        private void metroTile2_Click(object sender, EventArgs e)
+        {
+            Sales_Report_Form myform = new Sales_Report_Form();
+            myform.ShowDialog();
+        }
+
+        private void metroTile1_Click(object sender, EventArgs e)
+        {
+            Vineyard_Tour_Report_Page myform = new Vineyard_Tour_Report_Page();
+            myform.ShowDialog();
+        }
     }
 }

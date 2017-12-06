@@ -35,9 +35,9 @@
             // metroTile2
             // 
             this.metroTile2.ActiveControl = null;
-            this.metroTile2.Location = new System.Drawing.Point(14, 254);
+            this.metroTile2.Location = new System.Drawing.Point(240, 76);
             this.metroTile2.Name = "metroTile2";
-            this.metroTile2.Size = new System.Drawing.Size(220, 172);
+            this.metroTile2.Size = new System.Drawing.Size(220, 369);
             this.metroTile2.Style = MetroFramework.MetroColorStyle.Orange;
             this.metroTile2.TabIndex = 1;
             this.metroTile2.Text = "Refund a Sale";
@@ -53,7 +53,7 @@
             this.metroTile1.ActiveControl = null;
             this.metroTile1.Location = new System.Drawing.Point(14, 76);
             this.metroTile1.Name = "metroTile1";
-            this.metroTile1.Size = new System.Drawing.Size(220, 172);
+            this.metroTile1.Size = new System.Drawing.Size(220, 369);
             this.metroTile1.Style = MetroFramework.MetroColorStyle.Orange;
             this.metroTile1.TabIndex = 0;
             this.metroTile1.Text = "Make a New Sale";
@@ -68,10 +68,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(731, 476);
+            this.ClientSize = new System.Drawing.Size(484, 476);
             this.Controls.Add(this.metroTile2);
             this.Controls.Add(this.metroTile1);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(484, 476);
             this.Name = "Sales_Form";
+            this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Orange;
             this.Text = "Sales";
             this.Load += new System.EventHandler(this.Sales_Form_Load);

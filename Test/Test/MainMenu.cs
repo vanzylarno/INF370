@@ -21,6 +21,7 @@ namespace Test
         string EmployeeType;
         private void MainMenu_Load(object sender, EventArgs e)
         {
+            refreshNotifications.Start();
             lblHelp.Hide();
             panel2.Enabled = false;
             lbblDetails.Text = "";
@@ -49,9 +50,9 @@ namespace Test
             {
                 pictureBox1.Image = null;
             }
-            lblDate.Text = DateTime.Now.ToShortDateString();
+            lblDate.Text = DateTime.Now.ToLongDateString();
             lblUserName.Text = Globals_Class.UserName;
-            lblDay.Text = DateTime.Now.DayOfWeek.ToString();
+            
 
 
             if (Globals_Class.adminNumber == 1)
@@ -90,7 +91,29 @@ namespace Test
             }
             dr.Close();
             sqlcon.Close();
+            txtNotification.Enabled = false;
 
+            //Load Notifications
+            SqlConnection sqlcon3 = new SqlConnection(Globals_Class.ConnectionString);
+            sqlcon3.Open();
+            string cmd3 = "SELECT NotificationName, NotificationDate, NotificationDescription FROM Notifications WHERE NotificationDate ='" + lblDate.Text + "'";
+            SqlCommand sqlcom3 = new SqlCommand(cmd3, sqlcon3);
+            SqlDataReader reader3;
+            reader3 = sqlcom3.ExecuteReader();
+            if(reader3.HasRows)
+            {
+                while(reader3.Read())
+                {
+                    listBox1.Items.Add((reader3["NotificationName"]));
+                }
+            }
+            else
+            {
+                string NoNotifications = "There are Currently no Notifications";
+                listBox1.Items.Add(NoNotifications);
+            }
+            reader3.Close();
+            sqlcon3.Close();
             
 
         }
@@ -378,6 +401,75 @@ namespace Test
         private void metroTile9_MouseHover(object sender, EventArgs e)
         {
             NotificationInfo();
+        }
+
+        private void metroTile7_Click(object sender, EventArgs e)
+        {
+            Mailing_Form myform = new Mailing_Form();
+            myform.ShowDialog();
+        }
+
+        private void metroTile9_Click(object sender, EventArgs e)
+        {
+            NotificationsForm myform = new NotificationsForm();
+            myform.ShowDialog();
+        }
+
+        private void listBox1_Click(object sender, EventArgs e)
+        {
+            SqlConnection sqlcon = new SqlConnection(Globals_Class.ConnectionString);
+            sqlcon.Open();
+            string cmd = "SELECT NotificationDescription FROM Notifications WHERE NotificationName ='" + listBox1.Text.ToString() + "'";
+            SqlCommand sqlcom = new SqlCommand(cmd, sqlcon);
+            SqlDataReader dr;
+            dr = sqlcom.ExecuteReader();
+            if(dr.HasRows)
+            {
+                while (dr.Read())
+                {
+                    txtNotification.Text = (dr["NotificationDescription"].ToString());
+                }
+            }
+            dr.Close();
+            sqlcon.Close();
+        }
+
+        private void refreshNotifications_Tick(object sender, EventArgs e)
+        {
+            //Load Notifications
+            listBox1.Items.Clear();
+            SqlConnection sqlcon3 = new SqlConnection(Globals_Class.ConnectionString);
+            sqlcon3.Open();
+            string cmd3 = "SELECT NotificationName, NotificationDate, NotificationDescription FROM Notifications WHERE NotificationDate ='" + lblDate.Text + "'";
+            SqlCommand sqlcom3 = new SqlCommand(cmd3, sqlcon3);
+            SqlDataReader reader3;
+            reader3 = sqlcom3.ExecuteReader();
+            if (reader3.HasRows)
+            {
+                while (reader3.Read())
+                {
+                    listBox1.Items.Add((reader3["NotificationName"]));
+                }
+            }
+            else
+            {
+                string NoNotifications = "There are Currently no Notifications";
+                listBox1.Items.Add(NoNotifications);
+                txtNotification.Text = "";
+            }
+            reader3.Close();
+            sqlcon3.Close();
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void metroTile8_Click(object sender, EventArgs e)
+        {
+            Messaging_Form myform = new Messaging_Form();
+            myform.ShowDialog();
         }
     }
 }

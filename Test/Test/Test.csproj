@@ -62,6 +62,12 @@
     <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
       <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.IdentityModel.Logging, Version=1.1.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.Logging.1.1.2\lib\net451\Microsoft.IdentityModel.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Tokens, Version=5.1.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.Tokens.5.1.2\lib\net451\Microsoft.IdentityModel.Tokens.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
       <EmbedInteropTypes>True</EmbedInteropTypes>
       <HintPath>..\packages\Microsoft.Office.Interop.Word.15.0.4797.1003\lib\net20\Microsoft.Office.Interop.Word.dll</HintPath>
@@ -104,13 +110,41 @@
       <HintPath>..\packages\Unofficial.Microsoft.SQLServer.SMO.2014.12.0.2000.8\lib\Microsoft.SqlServer.SqlEnum.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.IdentityModel.Tokens.Jwt, Version=5.1.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IdentityModel.Tokens.Jwt.5.1.2\lib\net451\System.IdentityModel.Tokens.Jwt.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
+    <Reference Include="System.Web.Helpers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.1.0.20105.408\lib\net40\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.3.0.20105.1\lib\net40\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.1.0.20105.408\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.1.0.20105.408\lib\net40\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.1.0.20105.408\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.1.0.20105.408\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
     <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\MahApps.Metro.1.5.0\lib\net45\System.Windows.Interactivity.dll</HintPath>
@@ -125,6 +159,15 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="Twilio, Version=5.9.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Twilio.5.9.1\lib\net451\Twilio.dll</HintPath>
+    </Reference>
+    <Reference Include="Twilio.AspNet.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Twilio.AspNet.Common.5.8.3\lib\net45\Twilio.AspNet.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Twilio.AspNet.Mvc, Version=5.8.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Twilio.AspNet.Mvc.5.8.3\lib\net451\Twilio.AspNet.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="WindowsBase" />
     <Reference Include="WindowsFormsIntegration" />
     <Reference Include="Zen.Barcode.Core, Version=3.1.0.0, Culture=neutral, PublicKeyToken=b5ae55aa76d2d9de, processorArchitecture=MSIL">
@@ -137,6 +180,12 @@
     </Compile>
     <Compile Include="Account Settings Form.Designer.cs">
       <DependentUpon>Account Settings Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add EmailContact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add EmailContact.Designer.cs">
+      <DependentUpon>Add EmailContact.cs</DependentUpon>
     </Compile>
     <Compile Include="Add Employee Type.cs">
       <SubType>Form</SubType>
@@ -156,6 +205,12 @@
     <Compile Include="Add Inventory Product.Designer.cs">
       <DependentUpon>Add Inventory Product.cs</DependentUpon>
     </Compile>
+    <Compile Include="Add Messaging Contact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Messaging Contact.Designer.cs">
+      <DependentUpon>Add Messaging Contact.cs</DependentUpon>
+    </Compile>
     <Compile Include="Add New Customer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -167,6 +222,12 @@
     </Compile>
     <Compile Include="Add new User.Designer.cs">
       <DependentUpon>Add new User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add Notification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Notification.Designer.cs">
+      <DependentUpon>Add Notification.cs</DependentUpon>
     </Compile>
     <Compile Include="Add Supplier Form.cs">
       <SubType>Form</SubType>
@@ -242,6 +303,12 @@
     <Compile Include="Database Backup Form.Designer.cs">
       <DependentUpon>Database Backup Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="Delete a Contact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete a Contact.Designer.cs">
+      <DependentUpon>Delete a Contact.cs</DependentUpon>
+    </Compile>
     <Compile Include="Delete a Customer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -277,6 +344,18 @@
     </Compile>
     <Compile Include="Delete a Wine Tasting.Designer.cs">
       <DependentUpon>Delete a Wine Tasting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Delete Messaging Contact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete Messaging Contact.Designer.cs">
+      <DependentUpon>Delete Messaging Contact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Delete Notification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete Notification.Designer.cs">
+      <DependentUpon>Delete Notification.cs</DependentUpon>
     </Compile>
     <Compile Include="Delete VineyardTour.cs">
       <SubType>Form</SubType>
@@ -338,6 +417,12 @@
     <Compile Include="Find a VineyardTour.Designer.cs">
       <DependentUpon>Find a VineyardTour.cs</DependentUpon>
     </Compile>
+    <Compile Include="Find Contact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Find Contact.Designer.cs">
+      <DependentUpon>Find Contact.cs</DependentUpon>
+    </Compile>
     <Compile Include="Find Employee.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -349,6 +434,12 @@
     </Compile>
     <Compile Include="Find Inventory Product.Designer.cs">
       <DependentUpon>Find Inventory Product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Find Messaging Contact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Find Messaging Contact.Designer.cs">
+      <DependentUpon>Find Messaging Contact.cs</DependentUpon>
     </Compile>
     <Compile Include="Find Wine Tasting.cs">
       <SubType>Form</SubType>
@@ -396,6 +487,12 @@
     <Compile Include="Loyalty Program.Designer.cs">
       <DependentUpon>Loyalty Program.cs</DependentUpon>
     </Compile>
+    <Compile Include="Mailing Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mailing Form.Designer.cs">
+      <DependentUpon>Mailing Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -407,6 +504,12 @@
     </Compile>
     <Compile Include="Make a New Sale.Designer.cs">
       <DependentUpon>Make a New Sale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Messaging Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Messaging Form.Designer.cs">
+      <DependentUpon>Messaging Form.cs</DependentUpon>
     </Compile>
     <Compile Include="Model1.Context.cs">
       <AutoGen>True</AutoGen>
@@ -422,6 +525,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="NotificationsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NotificationsForm.Designer.cs">
+      <DependentUpon>NotificationsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="ProgressReport.cs" />
@@ -461,6 +570,12 @@
     <Compile Include="Sales Form.Designer.cs">
       <DependentUpon>Sales Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="Sales Report Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales Report Form.Designer.cs">
+      <DependentUpon>Sales Report Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Send a Supplier Order Help Page.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -489,6 +604,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>TestDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Update a Contact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update a Contact.Designer.cs">
+      <DependentUpon>Update a Contact.cs</DependentUpon>
     </Compile>
     <Compile Include="Update a Supplier Form.cs">
       <SubType>Form</SubType>
@@ -538,6 +659,18 @@
     <Compile Include="Update Inventory Product.Designer.cs">
       <DependentUpon>Update Inventory Product.cs</DependentUpon>
     </Compile>
+    <Compile Include="Update Messaging Contact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update Messaging Contact.Designer.cs">
+      <DependentUpon>Update Messaging Contact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Update Notification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update Notification.Designer.cs">
+      <DependentUpon>Update Notification.cs</DependentUpon>
+    </Compile>
     <Compile Include="Use Loyalty Points.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -549,6 +682,12 @@
     </Compile>
     <Compile Include="View Points Available.Designer.cs">
       <DependentUpon>View Points Available.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vineyard Tour Report Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vineyard Tour Report Page.Designer.cs">
+      <DependentUpon>Vineyard Tour Report Page.cs</DependentUpon>
     </Compile>
     <Compile Include="Vineyard Tours Form.cs">
       <SubType>Form</SubType>
@@ -589,6 +728,9 @@
     <EmbeddedResource Include="Account Settings Form.resx">
       <DependentUpon>Account Settings Form.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Add EmailContact.resx">
+      <DependentUpon>Add EmailContact.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Add Employee Type.resx">
       <DependentUpon>Add Employee Type.cs</DependentUpon>
     </EmbeddedResource>
@@ -598,11 +740,17 @@
     <EmbeddedResource Include="Add Inventory Product.resx">
       <DependentUpon>Add Inventory Product.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Add Messaging Contact.resx">
+      <DependentUpon>Add Messaging Contact.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Add New Customer.resx">
       <DependentUpon>Add New Customer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Add new User.resx">
       <DependentUpon>Add new User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add Notification.resx">
+      <DependentUpon>Add Notification.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Add Supplier Form.resx">
       <DependentUpon>Add Supplier Form.cs</DependentUpon>
@@ -640,6 +788,9 @@
     <EmbeddedResource Include="Database Backup Form.resx">
       <DependentUpon>Database Backup Form.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Delete a Contact.resx">
+      <DependentUpon>Delete a Contact.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Delete a Customer.resx">
       <DependentUpon>Delete a Customer.cs</DependentUpon>
     </EmbeddedResource>
@@ -657,6 +808,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Delete a Wine Tasting.resx">
       <DependentUpon>Delete a Wine Tasting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delete Messaging Contact.resx">
+      <DependentUpon>Delete Messaging Contact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delete Notification.resx">
+      <DependentUpon>Delete Notification.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Delete VineyardTour.resx">
       <DependentUpon>Delete VineyardTour.cs</DependentUpon>
@@ -688,11 +845,17 @@
     <EmbeddedResource Include="Find a VineyardTour.resx">
       <DependentUpon>Find a VineyardTour.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Find Contact.resx">
+      <DependentUpon>Find Contact.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Find Employee.resx">
       <DependentUpon>Find Employee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Find Inventory Product.resx">
       <DependentUpon>Find Inventory Product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Find Messaging Contact.resx">
+      <DependentUpon>Find Messaging Contact.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Find Wine Tasting.resx">
       <DependentUpon>Find Wine Tasting.cs</DependentUpon>
@@ -715,11 +878,20 @@
     <EmbeddedResource Include="Loyalty Program.resx">
       <DependentUpon>Loyalty Program.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Mailing Form.resx">
+      <DependentUpon>Mailing Form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Make a New Sale.resx">
       <DependentUpon>Make a New Sale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Messaging Form.resx">
+      <DependentUpon>Messaging Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NotificationsForm.resx">
+      <DependentUpon>NotificationsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -741,6 +913,9 @@
     <EmbeddedResource Include="Sales Form.resx">
       <DependentUpon>Sales Form.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Sales Report Form.resx">
+      <DependentUpon>Sales Report Form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Send a Supplier Order Help Page.resx">
       <DependentUpon>Send a Supplier Order Help Page.cs</DependentUpon>
     </EmbeddedResource>
@@ -752,6 +927,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Suppliers Report Form.resx">
       <DependentUpon>Suppliers Report Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update a Contact.resx">
+      <DependentUpon>Update a Contact.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Update a Supplier Form.resx">
       <DependentUpon>Update a Supplier Form.cs</DependentUpon>
@@ -777,11 +955,20 @@
     <EmbeddedResource Include="Update Inventory Product.resx">
       <DependentUpon>Update Inventory Product.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Update Messaging Contact.resx">
+      <DependentUpon>Update Messaging Contact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update Notification.resx">
+      <DependentUpon>Update Notification.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Use Loyalty Points.resx">
       <DependentUpon>Use Loyalty Points.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View Points Available.resx">
       <DependentUpon>View Points Available.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vineyard Tour Report Page.resx">
+      <DependentUpon>Vineyard Tour Report Page.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vineyard Tours Form.resx">
       <DependentUpon>Vineyard Tours Form.cs</DependentUpon>

@@ -32,16 +32,20 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lblUserName = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lblDay = new System.Windows.Forms.Label();
             this.lblTime = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.lblDate = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.lbblDetails = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblHelp = new MetroFramework.Controls.MetroLabel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.txtNotification = new MetroFramework.Controls.MetroTextBox();
+            this.lblDate = new System.Windows.Forms.Label();
+            this.refreshNotifications = new System.Windows.Forms.Timer(this.components);
             this.metroTile9 = new MetroFramework.Controls.MetroTile();
             this.metroTile8 = new MetroFramework.Controls.MetroTile();
             this.metroTile7 = new MetroFramework.Controls.MetroTile();
@@ -60,6 +64,7 @@
             this.mtSuppliers = new MetroFramework.Controls.MetroTile();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -89,7 +94,6 @@
             // 
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.lblDay);
             this.panel1.Controls.Add(this.lblTime);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.pictureBox1);
@@ -102,17 +106,6 @@
             this.panel1.Size = new System.Drawing.Size(431, 153);
             this.panel1.TabIndex = 21;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // lblDay
-            // 
-            this.lblDay.AutoSize = true;
-            this.lblDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDay.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblDay.Location = new System.Drawing.Point(49, 45);
-            this.lblDay.Name = "lblDay";
-            this.lblDay.Size = new System.Drawing.Size(79, 16);
-            this.lblDay.TabIndex = 10;
-            this.lblDay.Text = "CurrentDate";
             // 
             // lblTime
             // 
@@ -135,17 +128,6 @@
             this.label3.Size = new System.Drawing.Size(42, 16);
             this.label3.TabIndex = 8;
             this.label3.Text = "Time:";
-            // 
-            // lblDate
-            // 
-            this.lblDate.AutoSize = true;
-            this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDate.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblDate.Location = new System.Drawing.Point(134, 45);
-            this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(79, 16);
-            this.lblDate.TabIndex = 6;
-            this.lblDate.Text = "CurrentDate";
             // 
             // label2
             // 
@@ -206,6 +188,88 @@
             this.lblHelp.TabIndex = 24;
             this.lblHelp.Text = "Help!";
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Controls.Add(this.txtNotification);
+            this.panel3.Controls.Add(this.listBox1);
+            this.panel3.Controls.Add(this.metroLabel1);
+            this.panel3.Location = new System.Drawing.Point(794, 52);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(620, 324);
+            this.panel3.TabIndex = 29;
+            // 
+            // metroLabel1
+            // 
+            this.metroLabel1.AutoSize = true;
+            this.metroLabel1.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel1.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.metroLabel1.Location = new System.Drawing.Point(16, 10);
+            this.metroLabel1.Name = "metroLabel1";
+            this.metroLabel1.Size = new System.Drawing.Size(160, 25);
+            this.metroLabel1.TabIndex = 1;
+            this.metroLabel1.Text = "Daily Notifications:";
+            this.metroLabel1.WrapToLine = true;
+            // 
+            // listBox1
+            // 
+            this.listBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(16, 44);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(208, 260);
+            this.listBox1.TabIndex = 2;
+            this.listBox1.Click += new System.EventHandler(this.listBox1_Click);
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            // 
+            // txtNotification
+            // 
+            // 
+            // 
+            // 
+            this.txtNotification.CustomButton.Image = null;
+            this.txtNotification.CustomButton.Location = new System.Drawing.Point(81, 2);
+            this.txtNotification.CustomButton.Name = "";
+            this.txtNotification.CustomButton.Size = new System.Drawing.Size(253, 253);
+            this.txtNotification.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtNotification.CustomButton.TabIndex = 1;
+            this.txtNotification.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtNotification.CustomButton.UseSelectable = true;
+            this.txtNotification.CustomButton.Visible = false;
+            this.txtNotification.Lines = new string[0];
+            this.txtNotification.Location = new System.Drawing.Point(255, 44);
+            this.txtNotification.MaxLength = 32767;
+            this.txtNotification.Multiline = true;
+            this.txtNotification.Name = "txtNotification";
+            this.txtNotification.PasswordChar = '\0';
+            this.txtNotification.ReadOnly = true;
+            this.txtNotification.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtNotification.SelectedText = "";
+            this.txtNotification.SelectionLength = 0;
+            this.txtNotification.SelectionStart = 0;
+            this.txtNotification.ShortcutsEnabled = true;
+            this.txtNotification.Size = new System.Drawing.Size(337, 258);
+            this.txtNotification.TabIndex = 3;
+            this.txtNotification.UseSelectable = true;
+            this.txtNotification.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtNotification.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // lblDate
+            // 
+            this.lblDate.AutoSize = true;
+            this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDate.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblDate.Location = new System.Drawing.Point(47, 45);
+            this.lblDate.Name = "lblDate";
+            this.lblDate.Size = new System.Drawing.Size(79, 16);
+            this.lblDate.TabIndex = 6;
+            this.lblDate.Text = "CurrentDate";
+            // 
+            // refreshNotifications
+            // 
+            this.refreshNotifications.Interval = 1000;
+            this.refreshNotifications.Tick += new System.EventHandler(this.refreshNotifications_Tick);
+            // 
             // metroTile9
             // 
             this.metroTile9.ActiveControl = null;
@@ -221,6 +285,7 @@
             this.metroTile9.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
             this.metroTile9.UseSelectable = true;
             this.metroTile9.UseTileImage = true;
+            this.metroTile9.Click += new System.EventHandler(this.metroTile9_Click);
             this.metroTile9.MouseHover += new System.EventHandler(this.metroTile9_MouseHover);
             // 
             // metroTile8
@@ -238,6 +303,7 @@
             this.metroTile8.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
             this.metroTile8.UseSelectable = true;
             this.metroTile8.UseTileImage = true;
+            this.metroTile8.Click += new System.EventHandler(this.metroTile8_Click);
             this.metroTile8.MouseHover += new System.EventHandler(this.metroTile8_MouseHover);
             // 
             // metroTile7
@@ -255,6 +321,7 @@
             this.metroTile7.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
             this.metroTile7.UseSelectable = true;
             this.metroTile7.UseTileImage = true;
+            this.metroTile7.Click += new System.EventHandler(this.metroTile7_Click);
             this.metroTile7.MouseHover += new System.EventHandler(this.metroTile7_MouseHover);
             // 
             // metroTile6
@@ -488,6 +555,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1940, 1100);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.metroTile9);
             this.Controls.Add(this.metroTile8);
             this.Controls.Add(this.metroTile7);
@@ -519,6 +587,8 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -540,13 +610,11 @@
         private MetroFramework.Controls.MetroTile mtAdmin;
         private System.Windows.Forms.Panel panel1;
         private MetroFramework.Controls.MetroLabel metroLabel3;
-        private System.Windows.Forms.Label lblDate;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblTime;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Label lblDay;
         private System.Windows.Forms.Label lbblDetails;
         private System.Windows.Forms.Panel panel2;
         private MetroFramework.Controls.MetroLabel lblHelp;
@@ -555,5 +623,11 @@
         private MetroFramework.Controls.MetroTile metroTile7;
         private MetroFramework.Controls.MetroTile metroTile8;
         private MetroFramework.Controls.MetroTile metroTile9;
+        private System.Windows.Forms.Panel panel3;
+        private MetroFramework.Controls.MetroLabel metroLabel1;
+        private MetroFramework.Controls.MetroTextBox txtNotification;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Label lblDate;
+        private System.Windows.Forms.Timer refreshNotifications;
     }
 }
